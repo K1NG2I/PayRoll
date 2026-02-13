@@ -1,0 +1,109 @@
+﻿@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+@{
+    Layout = "_Layout";
+    ViewData["Title"] = "FleetLynk";
+}
+@section Scripts {
+    <script src="~/js/Views/Dashboard.js"></script>
+}
+
+
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fleetlynk Dashboard</title>
+    <link rel="stylesheet" href="~/css/DashboardStyle.css" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="layout">
+        <!-- Main Area -->
+        <div class="main">
+            <!-- Stat Cards -->
+            <section class="cards">
+                <div class="card">
+                    <h3>Active Vehicles</h3>
+                    <p>152</p>
+                </div>
+                <div class="card">
+                    <h3>Trips Today</h3>
+                    <p>87</p>
+                </div>
+                <div class="card">
+                    <h3>Fuel Consumption</h3>
+                    <p>2,340 L</p>
+                </div>
+                <div class="card">
+                    <h3>Breakdowns</h3>
+                    <p>3</p>
+                </div>
+                <div class="card">
+                    <h3>Revenue</h3>
+                    <p>₹ 1,24,500</p>
+                </div>
+            </section>
+
+            <!-- Charts / Tables -->
+            <section class="charts">
+                <div class="chart">
+                    <h3>Vehicle Usage (Last 7 Days)</h3>
+                    <canvas id="vehicleChart"></canvas>
+                </div>
+
+                <div class="chart">
+                    <h3>Fuel Consumption Trend</h3>
+                    <canvas id="fuelChart"></canvas>
+                </div>
+
+                <div class="chart">
+                    <h3>Breakdown Causes</h3>
+                    <canvas id="breakdownChart"></canvas>
+                </div>
+
+                <div class="table-container">
+                    <h3>Recent Trips</h3>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>ID</th>
+                                <th>Driver</th>
+                                <th>Route</th>
+                                <th>Status</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>#101</td><td>Rajesh</td><td>Ahmedabad → Surat</td><td>✅ Completed</td></tr>
+                            <tr><td>#102</td><td>Amit</td><td>Vadodara → Mumbai</td><td>🚚 Ongoing</td></tr>
+                            <tr><td>#103</td><td>Neha</td><td>Surat → Pune</td><td>🕒 Pending</td></tr>
+                            <tr><td>#104</td><td>Vikram</td><td>Mumbai → Nashik</td><td>✅ Completed</td></tr>
+                            <tr><td>#105</td><td>Manoj</td><td>Pune → Delhi</td><td>🚚 Ongoing</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="table-container">
+                    <h3>Top Drivers</h3>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Driver</th>
+                                <th>Trips</th>
+                                <th>Rating</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>Rajesh</td><td>48</td><td>⭐ 4.9</td></tr>
+                            <tr><td>Amit</td><td>45</td><td>⭐ 4.7</td></tr>
+                            <tr><td>Neha</td><td>42</td><td>⭐ 4.8</td></tr>
+                            <tr><td>Vikram</td><td>40</td><td>⭐ 4.6</td></tr>
+                            <tr><td>Manoj</td><td>38</td><td>⭐ 4.5</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+        </div>
+    </div>
+</body>
+
+

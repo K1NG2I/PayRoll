@@ -1,0 +1,106 @@
+﻿@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+
+@{
+    Layout = "_Layout";
+    ViewData["Title"] = "ProfileRight";
+}
+@section Scripts {
+    <script src="~/js/Views/ProfileRights.js"></script>
+}
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-12">
+            <div class="page-title-box add">
+                <h1 class="page-title">Profile Rights Details</h1>
+            </div>
+        </div>
+        <div id="AddProfileDiv" class="card com-franchise-info col-12">
+            <form class="form" id="ProFileBodyForm" method="post">
+                <input type="hidden" id="txtProfileId" />
+
+                <div class="card-body p-9">
+                    <h2 class="page-form-title">Profile Rights</h2>
+                    <div class="row">
+
+                        @* <div class="col-lg-6"> *@
+                        @*     <label class="form-label">Profile Name: <span>*</span></label> *@
+                        @*     <select class="select2-custom form-control" style="width: 100%;" id="txtName"> *@
+                        @*     </select> *@
+                        @* </div> *@
+
+                        <div class="col-lg-6">
+                            <div class="item-input">
+                                <label class="form-label">Profile Name <span>*</span></label>
+                                <select id="txtName" class="select2-custom form-control" style="width: 100%;"></select>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-6">
+                            <div class="item-input">
+                                <label class="form-label">Menu Group <span>*</span></label>
+                                <select id="txtMenu" class="select2-custom form-control" style="width: 100%;"></select>
+                            </div>
+                        </div>
+
+                        @* <div class="col-lg-6"> *@
+                        @*     <label class="form-label">Menu Group: <span>*</span></label> *@
+                        @*     <select class="select2-custom form-control" style="width: 100%;" id="txtMenu"> *@
+                        @*     </select> *@
+                        @* </div> *@
+                    </div>
+                </div>
+
+                <div class="card-body p-9">
+                    @*  <div class="d-flex justify-content-between align-items-center p-2">
+                        <label class="check-box-custom d-flex align-items-center ms-auto">
+                            <input class="form-check-input" type="checkbox" id="select-all">
+                            <span class="checkmark"></span>
+                            <span class="form-check-label ms-1" for="select-all">
+                                Select all
+                            </span>
+                        </label>
+                    </div> *@
+
+                    <!-- Select All Checkbox -->
+                    <div class="d-flex justify-content-between align-items-center p-2">
+                        <div class="form-check ms-auto">
+                            <input class="form-check-input fs-5" type="checkbox" id="selectAll">
+                            <label class="form-check-label fs-5" for="selectAll">Select All</label>
+                        </div>
+                    </div>
+
+                    <!-- Menu Items -->
+
+                    @* <div class="mb-3" id="menuItemList">
+                </div> *@
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th class="fs-6">
+                                    Administrator Acces
+                                </th>
+                                <th class="text-center fs-6">View</th>
+                                <th class="text-center fs-6">Add</th>
+                                <th class="text-center fs-6">Edit</th>
+                                <th class="text-center fs-6">Cancel</th>
+                            </tr>
+                        </thead>
+                        <tbody id="menuItemList">
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="button-main mt-3">
+                    <a href="#" id="btnSaveForm" class="card-link" data-action="save">
+                        <i class="ri-save-line"></i>
+                        <span>Save</span>
+                    </a>
+                </div>
+            </form>
+        </div>
+
+    </div>
+</div>
+
+
+

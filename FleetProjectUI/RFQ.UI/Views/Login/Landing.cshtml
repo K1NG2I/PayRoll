@@ -1,0 +1,7 @@
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    var personName = ViewData["PersonName"] as string ?? string.Empty;
+}
+
+<h2>Welcome</h2>
+<p>Hello, @personName</p>

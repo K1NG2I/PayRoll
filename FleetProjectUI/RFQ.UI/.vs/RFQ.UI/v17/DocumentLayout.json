@@ -1,0 +1,174 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "E:\\Yash\\PayRoll\\Fleet\\FleetProjectUI\\RFQ.UI\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{04EC27E4-4B63-E4E7-F3C2-D60302F87F34}|RFQ.UI.csproj|e:\\yash\\payroll\\fleet\\fleetprojectui\\rfq.ui\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{04EC27E4-4B63-E4E7-F3C2-D60302F87F34}|RFQ.UI.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{04EC27E4-4B63-E4E7-F3C2-D60302F87F34}|RFQ.UI.csproj|e:\\yash\\payroll\\fleet\\fleetprojectui\\rfq.ui\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{04EC27E4-4B63-E4E7-F3C2-D60302F87F34}|RFQ.UI.csproj|solutionrelative:properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{20173949-1AA1-4044-A4A3-1FDA4A875100}|..\\RFQ.UI.Infrastructure\\RFQ.UI.Infrastructure.csproj|e:\\yash\\payroll\\fleet\\fleetprojectui\\rfq.ui.infrastructure\\extension\\serviceextension.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{06917965-A89F-4DF1-925A-17CD3C8F313C}|..\\RFQ.UI.Domain\\RFQ.UI.Domain.csproj|e:\\yash\\payroll\\fleet\\fleetprojectui\\rfq.ui.domain\\model\\rfqrecipient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{06917965-A89F-4DF1-925A-17CD3C8F313C}|..\\RFQ.UI.Domain\\RFQ.UI.Domain.csproj|e:\\yash\\payroll\\fleet\\fleetprojectui\\rfq.ui.domain\\model\\rfqdetaildto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{06917965-A89F-4DF1-925A-17CD3C8F313C}|..\\RFQ.UI.Domain\\RFQ.UI.Domain.csproj|e:\\yash\\payroll\\fleet\\fleetprojectui\\rfq.ui.domain\\model\\rfqdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{06917965-A89F-4DF1-925A-17CD3C8F313C}|..\\RFQ.UI.Domain\\RFQ.UI.Domain.csproj|e:\\yash\\payroll\\fleet\\fleetprojectui\\rfq.ui.domain\\model\\globalclass.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{06917965-A89F-4DF1-925A-17CD3C8F313C}|..\\RFQ.UI.Domain\\RFQ.UI.Domain.csproj|e:\\yash\\payroll\\fleet\\fleetprojectui\\rfq.ui.domain\\model\\appsettingsglobal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5C464F94-43C3-4C08-87C5-A2D63343C16F}|..\\RFQ.UI.Application\\RFQ.UI.Application.csproj|e:\\yash\\payroll\\fleet\\fleetprojectui\\rfq.ui.application\\extension\\serviceextension.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{04EC27E4-4B63-E4E7-F3C2-D60302F87F34}|RFQ.UI.csproj|e:\\yash\\payroll\\fleet\\fleetprojectui\\rfq.ui\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{04EC27E4-4B63-E4E7-F3C2-D60302F87F34}|RFQ.UI.csproj|solutionrelative:controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "E:\\Yash\\PayRoll\\Fleet\\FleetProjectUI\\RFQ.UI\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "E:\\Yash\\PayRoll\\Fleet\\FleetProjectUI\\RFQ.UI\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AQIAAMYAAAAAAAAAAAAAAM4AAABUAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-02-05T05:05:34.846Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "E:\\Yash\\PayRoll\\Fleet\\FleetProjectUI\\RFQ.UI\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "Properties\\launchSettings.json",
+              "ToolTip": "E:\\Yash\\PayRoll\\Fleet\\FleetProjectUI\\RFQ.UI\\Properties\\launchSettings.json",
+              "RelativeToolTip": "Properties\\launchSettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAHAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-02-05T05:05:07.584Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ServiceExtension.cs",
+              "DocumentMoniker": "E:\\Yash\\PayRoll\\Fleet\\FleetProjectUI\\RFQ.UI.Infrastructure\\Extension\\ServiceExtension.cs",
+              "RelativeDocumentMoniker": "..\\RFQ.UI.Infrastructure\\Extension\\ServiceExtension.cs",
+              "ToolTip": "E:\\Yash\\PayRoll\\Fleet\\FleetProjectUI\\RFQ.UI.Infrastructure\\Extension\\ServiceExtension.cs",
+              "RelativeToolTip": "..\\RFQ.UI.Infrastructure\\Extension\\ServiceExtension.cs",
+              "ViewState": "AQIAABkAAAAAAAAAAAAgwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-05T05:04:52.668Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "RfqRecipient.cs",
+              "DocumentMoniker": "E:\\Yash\\PayRoll\\Fleet\\FleetProjectUI\\RFQ.UI.Domain\\Model\\RfqRecipient.cs",
+              "RelativeDocumentMoniker": "..\\RFQ.UI.Domain\\Model\\RfqRecipient.cs",
+              "ToolTip": "E:\\Yash\\PayRoll\\Fleet\\FleetProjectUI\\RFQ.UI.Domain\\Model\\RfqRecipient.cs",
+              "RelativeToolTip": "..\\RFQ.UI.Domain\\Model\\RfqRecipient.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-05T05:04:34.902Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "RfqDetailDto.cs",
+              "DocumentMoniker": "E:\\Yash\\PayRoll\\Fleet\\FleetProjectUI\\RFQ.UI.Domain\\Model\\RfqDetailDto.cs",
+              "RelativeDocumentMoniker": "..\\RFQ.UI.Domain\\Model\\RfqDetailDto.cs",
+              "ToolTip": "E:\\Yash\\PayRoll\\Fleet\\FleetProjectUI\\RFQ.UI.Domain\\Model\\RfqDetailDto.cs",
+              "RelativeToolTip": "..\\RFQ.UI.Domain\\Model\\RfqDetailDto.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-05T05:04:34.291Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "RfqDto.cs",
+              "DocumentMoniker": "E:\\Yash\\PayRoll\\Fleet\\FleetProjectUI\\RFQ.UI.Domain\\Model\\RfqDto.cs",
+              "RelativeDocumentMoniker": "..\\RFQ.UI.Domain\\Model\\RfqDto.cs",
+              "ToolTip": "E:\\Yash\\PayRoll\\Fleet\\FleetProjectUI\\RFQ.UI.Domain\\Model\\RfqDto.cs",
+              "RelativeToolTip": "..\\RFQ.UI.Domain\\Model\\RfqDto.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-05T05:04:32.67Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "GlobalClass.cs",
+              "DocumentMoniker": "E:\\Yash\\PayRoll\\Fleet\\FleetProjectUI\\RFQ.UI.Domain\\Model\\GlobalClass.cs",
+              "RelativeDocumentMoniker": "..\\RFQ.UI.Domain\\Model\\GlobalClass.cs",
+              "ToolTip": "E:\\Yash\\PayRoll\\Fleet\\FleetProjectUI\\RFQ.UI.Domain\\Model\\GlobalClass.cs",
+              "RelativeToolTip": "..\\RFQ.UI.Domain\\Model\\GlobalClass.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-05T05:04:28.293Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "AppSettingsGlobal.cs",
+              "DocumentMoniker": "E:\\Yash\\PayRoll\\Fleet\\FleetProjectUI\\RFQ.UI.Domain\\Model\\AppSettingsGlobal.cs",
+              "RelativeDocumentMoniker": "..\\RFQ.UI.Domain\\Model\\AppSettingsGlobal.cs",
+              "ToolTip": "E:\\Yash\\PayRoll\\Fleet\\FleetProjectUI\\RFQ.UI.Domain\\Model\\AppSettingsGlobal.cs",
+              "RelativeToolTip": "..\\RFQ.UI.Domain\\Model\\AppSettingsGlobal.cs",
+              "ViewState": "AQIAAPgAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-05T05:04:18.069Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ServiceExtension.cs",
+              "DocumentMoniker": "E:\\Yash\\PayRoll\\Fleet\\FleetProjectUI\\RFQ.UI.Application\\Extension\\ServiceExtension.cs",
+              "RelativeDocumentMoniker": "..\\RFQ.UI.Application\\Extension\\ServiceExtension.cs",
+              "ToolTip": "E:\\Yash\\PayRoll\\Fleet\\FleetProjectUI\\RFQ.UI.Application\\Extension\\ServiceExtension.cs",
+              "RelativeToolTip": "..\\RFQ.UI.Application\\Extension\\ServiceExtension.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-05T05:03:58.984Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "LoginController.cs",
+              "DocumentMoniker": "E:\\Yash\\PayRoll\\Fleet\\FleetProjectUI\\RFQ.UI\\Controllers\\LoginController.cs",
+              "RelativeDocumentMoniker": "Controllers\\LoginController.cs",
+              "ToolTip": "E:\\Yash\\PayRoll\\Fleet\\FleetProjectUI\\RFQ.UI\\Controllers\\LoginController.cs",
+              "RelativeToolTip": "Controllers\\LoginController.cs",
+              "ViewState": "AQIAADAAAAAAAAAAAAAhwEMAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-05T04:24:45.705Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

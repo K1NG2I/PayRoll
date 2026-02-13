@@ -1,0 +1,8 @@
+{
+  "servers": {
+    "RFQUI Docs": {
+      "type": "sse",
+      "url": "https://gitmcp.io/sandipkumbhani/RFQUI/tree/Amit-Transactions-30-01-2026"
+    }
+  }
+}

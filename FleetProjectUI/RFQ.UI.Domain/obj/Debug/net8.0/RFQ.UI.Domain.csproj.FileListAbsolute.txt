@@ -1,0 +1,12 @@
+E:\Yash\PayRoll\Fleet\FleetProjectUI\RFQ.UI.Domain\bin\Debug\net8.0\RFQ.UI.Domain.deps.json
+E:\Yash\PayRoll\Fleet\FleetProjectUI\RFQ.UI.Domain\bin\Debug\net8.0\RFQ.UI.Domain.dll
+E:\Yash\PayRoll\Fleet\FleetProjectUI\RFQ.UI.Domain\bin\Debug\net8.0\RFQ.UI.Domain.pdb
+E:\Yash\PayRoll\Fleet\FleetProjectUI\RFQ.UI.Domain\obj\Debug\net8.0\RFQ.UI.Domain.csproj.AssemblyReference.cache
+E:\Yash\PayRoll\Fleet\FleetProjectUI\RFQ.UI.Domain\obj\Debug\net8.0\RFQ.UI.Domain.GeneratedMSBuildEditorConfig.editorconfig
+E:\Yash\PayRoll\Fleet\FleetProjectUI\RFQ.UI.Domain\obj\Debug\net8.0\RFQ.UI.Domain.AssemblyInfoInputs.cache
+E:\Yash\PayRoll\Fleet\FleetProjectUI\RFQ.UI.Domain\obj\Debug\net8.0\RFQ.UI.Domain.AssemblyInfo.cs
+E:\Yash\PayRoll\Fleet\FleetProjectUI\RFQ.UI.Domain\obj\Debug\net8.0\RFQ.UI.Domain.csproj.CoreCompileInputs.cache
+E:\Yash\PayRoll\Fleet\FleetProjectUI\RFQ.UI.Domain\obj\Debug\net8.0\RFQ.UI.Domain.dll
+E:\Yash\PayRoll\Fleet\FleetProjectUI\RFQ.UI.Domain\obj\Debug\net8.0\refint\RFQ.UI.Domain.dll
+E:\Yash\PayRoll\Fleet\FleetProjectUI\RFQ.UI.Domain\obj\Debug\net8.0\RFQ.UI.Domain.pdb
+E:\Yash\PayRoll\Fleet\FleetProjectUI\RFQ.UI.Domain\obj\Debug\net8.0\ref\RFQ.UI.Domain.dll

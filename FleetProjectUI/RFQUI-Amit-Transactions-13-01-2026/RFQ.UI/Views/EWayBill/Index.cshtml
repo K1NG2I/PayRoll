@@ -1,0 +1,82 @@
+﻿@{
+    Layout = "_Layout";
+    ViewData["Title"] = "E-Way Bill Extension";
+    bool IsAdd = (bool)ViewData["IsAdd"];
+    bool IsEdit = (bool)ViewData["IsEdit"];
+    bool IsView = (bool)ViewData["IsView"];
+    bool IsCancel = (bool)ViewData["IsCancel"];
+}
+@section Scripts {
+    <script src="~/js/Views/EWayBill.js"></script>
+    <script>
+        var IsAdd = @IsAdd.ToString().ToLower();
+        var IsEdit = @IsEdit.ToString().ToLower();
+        var IsView = @IsView.ToString().ToLower();
+        var IsCancel = @IsCancel.ToString().ToLower();
+    </script>
+}
+
+<div class="row">
+    <div class="col-12">
+        <div class="page-title-box add">
+            <h1 class="page-title">E-Way Bill Extension</h1>
+        </div>
+    </div>
+</div>
+<div class="card com-profile-info">
+    <div class="top-details">
+        <form class="row all-custom-class" id="EWayBillExtensionForm" method="post">
+            <div class="col-lg-4">
+                <div class="item-input">
+                    <label class="form-label">E-Way Bill Expiry Date<span>*</span></label>
+                    <div class="kyc-input">
+                        <input type="date" class="form-control" id="txtExpiryDate" />
+                        <button type="button" class="kyc-btn" id="btnShow">Show</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xxl-12">
+                <div class="card com-profile-info vendor-table">
+                    <!-- Top Header -->
+                    <div class="table-top-header">
+                        <h4>Trip Details</h4>
+                    </div>
+
+                    <!-- Table -->
+                    <div class="table-responsive">
+                        <table id="tripDetailsTable" class="table dt-responsive nowrap w-100">
+                            <thead>
+                                <tr>
+                                    <th class="text-center">Sr. No.</th>
+                                    <th class="text-center">Vehicle No</th>
+                                    <th class="text-center">Booking No</th>
+                                    <th class="text-center">Booking Date</th>
+                                    <th class="text-center">Origin</th>
+                                    <th class="text-center">Destination</th>
+                                    <th class="text-center">Current Location</th>
+                                    <th class="text-center">Current Pincode</th>
+                                    <th class="text-center">Current State</th>
+                                    <th class="text-center">Remaining Distance</th>
+                                    <th class="text-center">Extension Reason</th>
+                                    <th class="text-center">Select</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+    <div class="button-main">
+        <a href="#" class="card-link" id="btnSaveForm" type="button">
+            <i class="ri-save-line"></i>
+            <span>Save</span>
+        </a>
+        <a href="#" class="card-link" id="btnSaveAndNewForm" type="button">
+            <i class="ri-save-line"></i>
+            <span>Save & New</span>
+        </a>
+    </div>
+</div>

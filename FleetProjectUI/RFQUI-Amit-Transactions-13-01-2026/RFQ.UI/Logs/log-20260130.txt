@@ -1,0 +1,310 @@
+2026-01-30 17:15:24.866 +05:30 [INF] User profile is available. Using 'C:\Users\Dev2\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-01-30 17:15:25.083 +05:30 [INF] Now listening on: https://localhost:7295
+2026-01-30 17:15:25.085 +05:30 [INF] Now listening on: http://localhost:5029
+2026-01-30 17:15:25.135 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-01-30 17:15:25.137 +05:30 [INF] Hosting environment: Development
+2026-01-30 17:15:25.138 +05:30 [INF] Content root path: E:\Yash\PayRoll\Fleet\RFQUI-Amit-Transactions-13-01-2026\RFQUI-Amit-Transactions-13-01-2026\RFQ.UI
+2026-01-30 17:15:26.283 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7295/ - null null
+2026-01-30 17:15:26.913 +05:30 [INF] Executing endpoint 'RFQ.UI.Controllers.LoginController.Login (RFQ.UI)'
+2026-01-30 17:15:26.927 +05:30 [INF] Route matched with {action = "Login", controller = "Login"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login() on controller RFQ.UI.Controllers.LoginController (RFQ.UI).
+2026-01-30 17:15:26.943 +05:30 [INF] Executing ViewResult, running view Login.
+2026-01-30 17:15:27.028 +05:30 [INF] Executed ViewResult - view Login executed in 85.3597ms.
+2026-01-30 17:15:27.039 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7295/css/dataTables.bootstrap5.min.css - null null
+2026-01-30 17:15:27.039 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7295/css/intlTelInput-largeFlags.css - null null
+2026-01-30 17:15:27.039 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7295/css/select2.min.css - null null
+2026-01-30 17:15:27.039 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7295/css/responsive.bootstrap5.min.css - null null
+2026-01-30 17:15:27.042 +05:30 [INF] Executed action RFQ.UI.Controllers.LoginController.Login (RFQ.UI) in 109.5465ms
+2026-01-30 17:15:27.045 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7295/css/select2-bootstrap4.min.css - null null
+2026-01-30 17:15:27.075 +05:30 [INF] Executed endpoint 'RFQ.UI.Controllers.LoginController.Login (RFQ.UI)'
+2026-01-30 17:15:27.058 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7295/css/remixicon.css - null null
+2026-01-30 17:15:27.045 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7295/css/buttons.bootstrap5.min.css - null null
+2026-01-30 17:15:27.052 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7295/css/dropzone.min.css - null null
+2026-01-30 17:15:27.084 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7295/images/truck-driving-city-street-night-bright-lights-tall-buildings-making-its-way-through-with-trailer.jpg - null null
+2026-01-30 17:15:27.058 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7295/css/bootstrap.min.css - null null
+2026-01-30 17:15:27.088 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7295/js/jquery.min.js - null null
+2026-01-30 17:15:27.090 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7295/js/bootstrap.bundle.min.js - null null
+2026-01-30 17:15:27.091 +05:30 [INF] Sending file. Request path: '/css/responsive.bootstrap5.min.css'. Physical path: 'E:\Yash\PayRoll\Fleet\RFQUI-Amit-Transactions-13-01-2026\RFQUI-Amit-Transactions-13-01-2026\RFQ.UI\wwwroot\css\responsive.bootstrap5.min.css'
+2026-01-30 17:15:27.091 +05:30 [INF] Sending file. Request path: '/css/intlTelInput-largeFlags.css'. Physical path: 'E:\Yash\PayRoll\Fleet\RFQUI-Amit-Transactions-13-01-2026\RFQUI-Amit-Transactions-13-01-2026\RFQ.UI\wwwroot\css\intlTelInput-largeFlags.css'
+2026-01-30 17:15:27.090 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7295/ - 200 null text/html; charset=utf-8 817.4632ms
+2026-01-30 17:15:27.091 +05:30 [INF] Sending file. Request path: '/css/buttons.bootstrap5.min.css'. Physical path: 'E:\Yash\PayRoll\Fleet\RFQUI-Amit-Transactions-13-01-2026\RFQUI-Amit-Transactions-13-01-2026\RFQ.UI\wwwroot\css\buttons.bootstrap5.min.css'
+2026-01-30 17:15:27.091 +05:30 [INF] Sending file. Request path: '/css/dataTables.bootstrap5.min.css'. Physical path: 'E:\Yash\PayRoll\Fleet\RFQUI-Amit-Transactions-13-01-2026\RFQUI-Amit-Transactions-13-01-2026\RFQ.UI\wwwroot\css\dataTables.bootstrap5.min.css'
+2026-01-30 17:15:27.091 +05:30 [INF] Sending file. Request path: '/css/select2-bootstrap4.min.css'. Physical path: 'E:\Yash\PayRoll\Fleet\RFQUI-Amit-Transactions-13-01-2026\RFQUI-Amit-Transactions-13-01-2026\RFQ.UI\wwwroot\css\select2-bootstrap4.min.css'
+2026-01-30 17:15:27.091 +05:30 [INF] Sending file. Request path: '/css/select2.min.css'. Physical path: 'E:\Yash\PayRoll\Fleet\RFQUI-Amit-Transactions-13-01-2026\RFQUI-Amit-Transactions-13-01-2026\RFQ.UI\wwwroot\css\select2.min.css'
+2026-01-30 17:15:27.093 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7295/js/select2.min.js - null null
+2026-01-30 17:15:27.092 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7295/js/simplebar.min.js - null null
+2026-01-30 17:15:27.096 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7295/css/responsive.bootstrap5.min.css - 200 4325 text/css 57.2383ms
+2026-01-30 17:15:27.095 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7295/js/intlTelInput.min.js - null null
+2026-01-30 17:15:27.097 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7295/css/intlTelInput-largeFlags.css - 200 17844 text/css 58.4218ms
+2026-01-30 17:15:27.107 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7295/js/datatable-init.js - null null
+2026-01-30 17:15:27.101 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7295/js/dropzone.min.js - null null
+2026-01-30 17:15:27.109 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7295/js/script-app.js - null null
+2026-01-30 17:15:27.113 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7295/js/views/login.js - null null
+2026-01-30 17:15:27.110 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7295/js/Views/Login.js - null null
+2026-01-30 17:15:27.118 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7295/_vs/browserLink - null null
+2026-01-30 17:15:27.120 +05:30 [INF] Sending file. Request path: '/css/dropzone.min.css'. Physical path: 'E:\Yash\PayRoll\Fleet\RFQUI-Amit-Transactions-13-01-2026\RFQUI-Amit-Transactions-13-01-2026\RFQ.UI\wwwroot\css\dropzone.min.css'
+2026-01-30 17:15:27.116 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7295/_framework/aspnetcore-browser-refresh.js - null null
+2026-01-30 17:15:27.123 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7295/css/dropzone.min.css - 200 9678 text/css 70.6261ms
+2026-01-30 17:15:27.099 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7295/css/buttons.bootstrap5.min.css - 200 4666 text/css 54.9512ms
+2026-01-30 17:15:27.100 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7295/css/dataTables.bootstrap5.min.css - 200 11981 text/css 61.796ms
+2026-01-30 17:15:27.133 +05:30 [INF] Sending file. Request path: '/js/Views/Login.js'. Physical path: 'E:\Yash\PayRoll\Fleet\RFQUI-Amit-Transactions-13-01-2026\RFQUI-Amit-Transactions-13-01-2026\RFQ.UI\wwwroot\js\Views\Login.js'
+2026-01-30 17:15:27.132 +05:30 [INF] Sending file. Request path: '/js/views/login.js'. Physical path: 'E:\Yash\PayRoll\Fleet\RFQUI-Amit-Transactions-13-01-2026\RFQUI-Amit-Transactions-13-01-2026\RFQ.UI\wwwroot\js\Views\Login.js'
+2026-01-30 17:15:27.136 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7295/js/Views/Login.js - 200 4855 text/javascript 25.835ms
+2026-01-30 17:15:27.135 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7295/_framework/aspnetcore-browser-refresh.js - 200 16497 application/javascript; charset=utf-8 19.811ms
+2026-01-30 17:15:27.140 +05:30 [INF] Sending file. Request path: '/js/intlTelInput.min.js'. Physical path: 'E:\Yash\PayRoll\Fleet\RFQUI-Amit-Transactions-13-01-2026\RFQUI-Amit-Transactions-13-01-2026\RFQ.UI\wwwroot\js\intlTelInput.min.js'
+2026-01-30 17:15:27.138 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7295/js/views/login.js - 200 4855 text/javascript 24.5549ms
+2026-01-30 17:15:27.146 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7295/js/intlTelInput.min.js - 200 32378 text/javascript 50.1607ms
+2026-01-30 17:15:27.150 +05:30 [INF] Sending file. Request path: '/js/datatable-init.js'. Physical path: 'E:\Yash\PayRoll\Fleet\RFQUI-Amit-Transactions-13-01-2026\RFQUI-Amit-Transactions-13-01-2026\RFQ.UI\wwwroot\js\datatable-init.js'
+2026-01-30 17:15:27.155 +05:30 [INF] Sending file. Request path: '/js/bootstrap.bundle.min.js'. Physical path: 'E:\Yash\PayRoll\Fleet\RFQUI-Amit-Transactions-13-01-2026\RFQUI-Amit-Transactions-13-01-2026\RFQ.UI\wwwroot\js\bootstrap.bundle.min.js'
+2026-01-30 17:15:27.155 +05:30 [INF] Sending file. Request path: '/js/select2.min.js'. Physical path: 'E:\Yash\PayRoll\Fleet\RFQUI-Amit-Transactions-13-01-2026\RFQUI-Amit-Transactions-13-01-2026\RFQ.UI\wwwroot\js\select2.min.js'
+2026-01-30 17:15:27.156 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7295/js/datatable-init.js - 200 47498 text/javascript 48.1099ms
+2026-01-30 17:15:27.132 +05:30 [INF] Sending file. Request path: '/js/script-app.js'. Physical path: 'E:\Yash\PayRoll\Fleet\RFQUI-Amit-Transactions-13-01-2026\RFQUI-Amit-Transactions-13-01-2026\RFQ.UI\wwwroot\js\script-app.js'
+2026-01-30 17:15:27.156 +05:30 [INF] Sending file. Request path: '/js/jquery.min.js'. Physical path: 'E:\Yash\PayRoll\Fleet\RFQUI-Amit-Transactions-13-01-2026\RFQUI-Amit-Transactions-13-01-2026\RFQ.UI\wwwroot\js\jquery.min.js'
+2026-01-30 17:15:27.156 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7295/js/bootstrap.bundle.min.js - 200 80743 text/javascript 66.5423ms
+2026-01-30 17:15:27.157 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7295/js/select2.min.js - 200 73163 text/javascript 63.6737ms
+2026-01-30 17:15:27.160 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7295/js/script-app.js - 200 10366 text/javascript 50.1692ms
+2026-01-30 17:15:27.161 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7295/js/jquery.min.js - 200 87533 text/javascript 72.6222ms
+2026-01-30 17:15:27.164 +05:30 [INF] Sending file. Request path: '/css/remixicon.css'. Physical path: 'E:\Yash\PayRoll\Fleet\RFQUI-Amit-Transactions-13-01-2026\RFQUI-Amit-Transactions-13-01-2026\RFQ.UI\wwwroot\css\remixicon.css'
+2026-01-30 17:15:27.161 +05:30 [INF] Sending file. Request path: '/js/dropzone.min.js'. Physical path: 'E:\Yash\PayRoll\Fleet\RFQUI-Amit-Transactions-13-01-2026\RFQUI-Amit-Transactions-13-01-2026\RFQ.UI\wwwroot\js\dropzone.min.js'
+2026-01-30 17:15:27.173 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7295/css/remixicon.css - 200 147312 text/css 116.0853ms
+2026-01-30 17:15:27.175 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7295/js/dropzone.min.js - 200 114702 text/javascript 74.0815ms
+2026-01-30 17:15:27.170 +05:30 [INF] Sending file. Request path: '/css/bootstrap.min.css'. Physical path: 'E:\Yash\PayRoll\Fleet\RFQUI-Amit-Transactions-13-01-2026\RFQUI-Amit-Transactions-13-01-2026\RFQ.UI\wwwroot\css\bootstrap.min.css'
+2026-01-30 17:15:27.137 +05:30 [INF] Sending file. Request path: '/js/simplebar.min.js'. Physical path: 'E:\Yash\PayRoll\Fleet\RFQUI-Amit-Transactions-13-01-2026\RFQUI-Amit-Transactions-13-01-2026\RFQ.UI\wwwroot\js\simplebar.min.js'
+2026-01-30 17:15:27.183 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7295/css/bootstrap.min.css - 200 232018 text/css 125.7564ms
+2026-01-30 17:15:27.185 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7295/js/simplebar.min.js - 200 27246 text/javascript 93.3699ms
+2026-01-30 17:15:27.186 +05:30 [INF] Sending file. Request path: '/images/truck-driving-city-street-night-bright-lights-tall-buildings-making-its-way-through-with-trailer.jpg'. Physical path: 'E:\Yash\PayRoll\Fleet\RFQUI-Amit-Transactions-13-01-2026\RFQUI-Amit-Transactions-13-01-2026\RFQ.UI\wwwroot\images\truck-driving-city-street-night-bright-lights-tall-buildings-making-its-way-through-with-trailer.jpg'
+2026-01-30 17:15:27.101 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7295/css/select2-bootstrap4.min.css - 200 6705 text/css 56.2228ms
+2026-01-30 17:15:27.191 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7295/images/truck-driving-city-street-night-bright-lights-tall-buildings-making-its-way-through-with-trailer.jpg - 200 1051350 image/jpeg 107.0999ms
+2026-01-30 17:15:27.101 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7295/css/select2.min.css - 200 16264 text/css 63.1948ms
+2026-01-30 17:15:27.104 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7295/js/jquery.repeater.min.js - null null
+2026-01-30 17:15:27.106 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7295/js/common.js - null null
+2026-01-30 17:15:27.198 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7295/_vs/browserLink - 200 null text/javascript; charset=UTF-8 80.4879ms
+2026-01-30 17:15:27.203 +05:30 [INF] Sending file. Request path: '/js/jquery.repeater.min.js'. Physical path: 'E:\Yash\PayRoll\Fleet\RFQUI-Amit-Transactions-13-01-2026\RFQUI-Amit-Transactions-13-01-2026\RFQ.UI\wwwroot\js\jquery.repeater.min.js'
+2026-01-30 17:15:27.062 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7295/css/simplebar.css - null null
+2026-01-30 17:15:27.068 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7295/css/app-style.css - null null
+2026-01-30 17:15:27.207 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7295/js/jquery.repeater.min.js - 200 11907 text/javascript 103.1408ms
+2026-01-30 17:15:27.210 +05:30 [INF] Sending file. Request path: '/css/simplebar.css'. Physical path: 'E:\Yash\PayRoll\Fleet\RFQUI-Amit-Transactions-13-01-2026\RFQUI-Amit-Transactions-13-01-2026\RFQ.UI\wwwroot\css\simplebar.css'
+2026-01-30 17:15:27.206 +05:30 [INF] Sending file. Request path: '/js/common.js'. Physical path: 'E:\Yash\PayRoll\Fleet\RFQUI-Amit-Transactions-13-01-2026\RFQUI-Amit-Transactions-13-01-2026\RFQ.UI\wwwroot\js\common.js'
+2026-01-30 17:15:27.072 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7295/images/logo.svg - null null
+2026-01-30 17:15:27.214 +05:30 [INF] Sending file. Request path: '/css/app-style.css'. Physical path: 'E:\Yash\PayRoll\Fleet\RFQUI-Amit-Transactions-13-01-2026\RFQUI-Amit-Transactions-13-01-2026\RFQ.UI\wwwroot\css\app-style.css'
+2026-01-30 17:15:27.215 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7295/css/simplebar.css - 200 4237 text/css 152.7029ms
+2026-01-30 17:15:27.216 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7295/js/common.js - 200 47551 text/javascript 110.1676ms
+2026-01-30 17:15:27.219 +05:30 [INF] Sending file. Request path: '/images/logo.svg'. Physical path: 'E:\Yash\PayRoll\Fleet\RFQUI-Amit-Transactions-13-01-2026\RFQUI-Amit-Transactions-13-01-2026\RFQ.UI\wwwroot\images\logo.svg'
+2026-01-30 17:15:27.219 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7295/css/app-style.css - 200 72256 text/css 151.262ms
+2026-01-30 17:15:27.224 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7295/images/logo.svg - 200 16376 image/svg+xml 151.8269ms
+2026-01-30 17:15:27.252 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7295/fonts/remixicon.woff2?t=1730118419915 - null null
+2026-01-30 17:15:27.260 +05:30 [INF] Sending file. Request path: '/fonts/remixicon.woff2'. Physical path: 'E:\Yash\PayRoll\Fleet\RFQUI-Amit-Transactions-13-01-2026\RFQUI-Amit-Transactions-13-01-2026\RFQ.UI\wwwroot\fonts\remixicon.woff2'
+2026-01-30 17:15:27.262 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7295/fonts/remixicon.woff2?t=1730118419915 - 200 176812 font/woff2 9.973ms
+2026-01-30 17:15:27.338 +05:30 [INF] Request starting HTTP/1.1 GET https://localhost:7295/js/bootstrap.bundle.min.js.map - null null
+2026-01-30 17:15:27.351 +05:30 [INF] Sending file. Request path: '/js/bootstrap.bundle.min.js.map'. Physical path: 'E:\Yash\PayRoll\Fleet\RFQUI-Amit-Transactions-13-01-2026\RFQUI-Amit-Transactions-13-01-2026\RFQ.UI\wwwroot\js\bootstrap.bundle.min.js.map'
+2026-01-30 17:15:27.351 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7295/favicon.ico - null null
+2026-01-30 17:15:27.353 +05:30 [INF] Request finished HTTP/1.1 GET https://localhost:7295/js/bootstrap.bundle.min.js.map - 200 332347 text/plain 15.2678ms
+2026-01-30 17:15:27.357 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7295/favicon.ico - 404 0 null 6.6867ms
+2026-01-30 17:15:27.360 +05:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7295/favicon.ico, Response status code: 404
+2026-01-30 17:15:38.390 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7295/Login/GetToken - application/json 42
+2026-01-30 17:15:38.403 +05:30 [INF] CORS policy execution failed.
+2026-01-30 17:15:38.405 +05:30 [INF] Request origin https://localhost:7295 does not have permission to access the resource.
+2026-01-30 17:15:38.407 +05:30 [INF] Executing endpoint 'RFQ.UI.Controllers.LoginController.GetToken (RFQ.UI)'
+2026-01-30 17:15:38.416 +05:30 [INF] Route matched with {action = "GetToken", controller = "Login"}. Executing controller action with signature System.Threading.Tasks.Task`1[RFQ.UI.Domain.ResponseDto.NewCommonResponseDto] GetToken(RFQ.UI.Models.LoginDto) on controller RFQ.UI.Controllers.LoginController (RFQ.UI).
+2026-01-30 17:15:38.561 +05:30 [INF] Base URL: https://localhost:7295/api/Login/Login
+2026-01-30 17:15:43.010 +05:30 [INF] API Error : No connection could be made because the target machine actively refused it. (localhost:7295)
+2026-01-30 17:15:43.011 +05:30 [INF] API Error Inner Exception: System.Net.Sockets.SocketException (10061): No connection could be made because the target machine actively refused it.
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource.GetResult(Int16 token)
+   at System.Net.Sockets.Socket.<ConnectAsync>g__WaitForConnectWithCancellation|285_0(AwaitableSocketAsyncEventArgs saea, ValueTask connectTask, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)
+
+
+2026-01-30 17:15:43.081 +05:30 [ERR]  Error -------------------- No connection could be made because the target machine actively refused it. (localhost:7295)
+2026-01-30 17:15:43.083 +05:30 [INF] --------------------------------
+2026-01-30 17:15:43.100 +05:30 [INF]    at RFQ.UI.Infrastructure.Provider.LoginAdaptor.PostApiDataAsync(LoginDto loginDto) in E:\Yash\PayRoll\Fleet\RFQUI-Amit-Transactions-13-01-2026\RFQUI-Amit-Transactions-13-01-2026\RFQ.UI.Infrastructure\Provider\LoginAdaptor.cs:line 51
+   at RFQ.UI.Controllers.LoginController.GetToken(LoginDto input) in E:\Yash\PayRoll\Fleet\RFQUI-Amit-Transactions-13-01-2026\RFQUI-Amit-Transactions-13-01-2026\RFQ.UI\Controllers\LoginController.cs:line 74
+2026-01-30 17:15:43.101 +05:30 [INF] --------------------------------
+2026-01-30 17:15:43.386 +05:30 [INF] Executed action RFQ.UI.Controllers.LoginController.GetToken (RFQ.UI) in 4968.5372ms
+2026-01-30 17:15:43.465 +05:30 [INF] Executed endpoint 'RFQ.UI.Controllers.LoginController.GetToken (RFQ.UI)'
+2026-01-30 17:15:43.769 +05:30 [ERR] An unhandled exception has occurred while executing the request.
+System.Exception: No connection could be made because the target machine actively refused it. (localhost:7295)
+   at RFQ.UI.Infrastructure.Provider.LoginAdaptor.PostApiDataAsync(LoginDto loginDto) in E:\Yash\PayRoll\Fleet\RFQUI-Amit-Transactions-13-01-2026\RFQUI-Amit-Transactions-13-01-2026\RFQ.UI.Infrastructure\Provider\LoginAdaptor.cs:line 51
+   at RFQ.UI.Controllers.LoginController.GetToken(LoginDto input) in E:\Yash\PayRoll\Fleet\RFQUI-Amit-Transactions-13-01-2026\RFQUI-Amit-Transactions-13-01-2026\RFQ.UI\Controllers\LoginController.cs:line 74
+   at lambda_method18(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Program.<>c__DisplayClass0_0.<<<Main>$>b__2>d.MoveNext() in E:\Yash\PayRoll\Fleet\RFQUI-Amit-Transactions-13-01-2026\RFQUI-Amit-Transactions-13-01-2026\RFQ.UI\Program.cs:line 74
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2026-01-30 17:15:43.777 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7295/Login/GetToken - 500 null text/plain; charset=utf-8 5386.7175ms
+2026-01-30 17:18:06.601 +05:30 [INF] User profile is available. Using 'C:\Users\Dev2\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-01-30 17:18:06.813 +05:30 [INF] Now listening on: https://localhost:7295
+2026-01-30 17:18:06.815 +05:30 [INF] Now listening on: http://localhost:5029
+2026-01-30 17:18:06.995 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-01-30 17:18:06.996 +05:30 [INF] Hosting environment: Development
+2026-01-30 17:18:06.996 +05:30 [INF] Content root path: E:\Yash\PayRoll\Fleet\RFQUI-Amit-Transactions-13-01-2026\RFQUI-Amit-Transactions-13-01-2026\RFQ.UI
+2026-01-30 17:18:07.600 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7295/ - null null
+2026-01-30 17:18:07.743 +05:30 [INF] Executing endpoint 'RFQ.UI.Controllers.LoginController.Login (RFQ.UI)'
+2026-01-30 17:18:07.759 +05:30 [INF] Route matched with {action = "Login", controller = "Login"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login() on controller RFQ.UI.Controllers.LoginController (RFQ.UI).
+2026-01-30 17:18:07.776 +05:30 [INF] Executing ViewResult, running view Login.
+2026-01-30 17:18:07.868 +05:30 [INF] Executed ViewResult - view Login executed in 93.9937ms.
+2026-01-30 17:18:07.869 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7295/css/select2.min.css - null null
+2026-01-30 17:18:07.872 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7295/css/dropzone.min.css - null null
+2026-01-30 17:18:07.870 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7295/css/responsive.bootstrap5.min.css - null null
+2026-01-30 17:18:07.911 +05:30 [INF] Executed action RFQ.UI.Controllers.LoginController.Login (RFQ.UI) in 148.0066ms
+2026-01-30 17:18:07.869 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7295/css/buttons.bootstrap5.min.css - null null
+2026-01-30 17:18:07.869 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7295/css/dataTables.bootstrap5.min.css - null null
+2026-01-30 17:18:07.869 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7295/css/intlTelInput-largeFlags.css - null null
+2026-01-30 17:18:07.886 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7295/css/select2-bootstrap4.min.css - null null
+2026-01-30 17:18:07.890 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7295/css/remixicon.css - null null
+2026-01-30 17:18:07.895 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7295/css/simplebar.css - null null
+2026-01-30 17:18:07.903 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7295/css/bootstrap.min.css - null null
+2026-01-30 17:18:07.909 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7295/css/app-style.css - null null
+2026-01-30 17:18:07.915 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7295/images/logo.svg - null null
+2026-01-30 17:18:07.916 +05:30 [INF] The file /css/responsive.bootstrap5.min.css was not modified
+2026-01-30 17:18:07.916 +05:30 [INF] The file /css/dropzone.min.css was not modified
+2026-01-30 17:18:07.916 +05:30 [INF] The file /css/select2.min.css was not modified
+2026-01-30 17:18:07.917 +05:30 [INF] Executed endpoint 'RFQ.UI.Controllers.LoginController.Login (RFQ.UI)'
+2026-01-30 17:18:07.919 +05:30 [INF] The file /css/buttons.bootstrap5.min.css was not modified
+2026-01-30 17:18:07.923 +05:30 [INF] The file /css/dataTables.bootstrap5.min.css was not modified
+2026-01-30 17:18:07.924 +05:30 [INF] The file /css/intlTelInput-largeFlags.css was not modified
+2026-01-30 17:18:07.925 +05:30 [INF] The file /css/select2-bootstrap4.min.css was not modified
+2026-01-30 17:18:07.926 +05:30 [INF] The file /css/remixicon.css was not modified
+2026-01-30 17:18:07.927 +05:30 [INF] The file /css/simplebar.css was not modified
+2026-01-30 17:18:07.929 +05:30 [INF] The file /css/bootstrap.min.css was not modified
+2026-01-30 17:18:07.930 +05:30 [INF] The file /css/app-style.css was not modified
+2026-01-30 17:18:07.931 +05:30 [INF] The file /images/logo.svg was not modified
+2026-01-30 17:18:07.934 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7295/css/dropzone.min.css - 304 null text/css 61.9175ms
+2026-01-30 17:18:07.934 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7295/css/responsive.bootstrap5.min.css - 304 null text/css 63.3755ms
+2026-01-30 17:18:07.934 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7295/css/select2.min.css - 304 null text/css 64.5306ms
+2026-01-30 17:18:07.942 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7295/js/jquery.min.js - null null
+2026-01-30 17:18:07.939 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7295/images/truck-driving-city-street-night-bright-lights-tall-buildings-making-its-way-through-with-trailer.jpg - null null
+2026-01-30 17:18:07.938 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7295/images/logo.svg - 304 null image/svg+xml 23.0747ms
+2026-01-30 17:18:07.937 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7295/ - 200 null text/html; charset=utf-8 347.4007ms
+2026-01-30 17:18:07.934 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7295/css/buttons.bootstrap5.min.css - 304 null text/css 65.0976ms
+2026-01-30 17:18:07.934 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7295/css/dataTables.bootstrap5.min.css - 304 null text/css 65.5687ms
+2026-01-30 17:18:07.935 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7295/css/intlTelInput-largeFlags.css - 304 null text/css 66.0439ms
+2026-01-30 17:18:07.935 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7295/css/select2-bootstrap4.min.css - 304 null text/css 49.0599ms
+2026-01-30 17:18:07.936 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7295/css/remixicon.css - 304 null text/css 46.0127ms
+2026-01-30 17:18:07.936 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7295/css/simplebar.css - 304 null text/css 42.7389ms
+2026-01-30 17:18:07.937 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7295/css/bootstrap.min.css - 304 null text/css 34.6149ms
+2026-01-30 17:18:07.937 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7295/css/app-style.css - 304 null text/css 28.0239ms
+2026-01-30 17:18:07.942 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7295/js/bootstrap.bundle.min.js - null null
+2026-01-30 17:18:07.944 +05:30 [INF] The file /js/jquery.min.js was not modified
+2026-01-30 17:18:07.945 +05:30 [INF] The file /images/truck-driving-city-street-night-bright-lights-tall-buildings-making-its-way-through-with-trailer.jpg was not modified
+2026-01-30 17:18:07.948 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7295/js/simplebar.min.js - null null
+2026-01-30 17:18:07.951 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7295/js/select2.min.js - null null
+2026-01-30 17:18:07.951 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7295/js/intlTelInput.min.js - null null
+2026-01-30 17:18:07.953 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7295/js/dropzone.min.js - null null
+2026-01-30 17:18:07.954 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7295/js/jquery.repeater.min.js - null null
+2026-01-30 17:18:07.956 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7295/js/common.js - null null
+2026-01-30 17:18:07.957 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7295/js/datatable-init.js - null null
+2026-01-30 17:18:07.959 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7295/js/script-app.js - null null
+2026-01-30 17:18:07.960 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7295/js/Views/Login.js - null null
+2026-01-30 17:18:07.962 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7295/_framework/aspnetcore-browser-refresh.js - null null
+2026-01-30 17:18:07.964 +05:30 [INF] The file /js/bootstrap.bundle.min.js was not modified
+2026-01-30 17:18:07.964 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7295/js/jquery.min.js - 304 null text/javascript 22.2079ms
+2026-01-30 17:18:07.978 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7295/js/bootstrap.bundle.min.js - 304 null text/javascript 35.6427ms
+2026-01-30 17:18:07.965 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7295/images/truck-driving-city-street-night-bright-lights-tall-buildings-making-its-way-through-with-trailer.jpg - 304 null image/jpeg 25.3874ms
+2026-01-30 17:18:07.966 +05:30 [INF] The file /js/simplebar.min.js was not modified
+2026-01-30 17:18:07.968 +05:30 [INF] The file /js/intlTelInput.min.js was not modified
+2026-01-30 17:18:07.985 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7295/_framework/aspnetcore-browser-refresh.js - 200 16497 application/javascript; charset=utf-8 23.1191ms
+2026-01-30 17:18:07.981 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7295/_vs/browserLink - null null
+2026-01-30 17:18:07.967 +05:30 [INF] The file /js/select2.min.js was not modified
+2026-01-30 17:18:07.969 +05:30 [INF] The file /js/dropzone.min.js was not modified
+2026-01-30 17:18:07.971 +05:30 [INF] The file /js/jquery.repeater.min.js was not modified
+2026-01-30 17:18:07.972 +05:30 [INF] The file /js/common.js was not modified
+2026-01-30 17:18:07.973 +05:30 [INF] The file /js/datatable-init.js was not modified
+2026-01-30 17:18:07.974 +05:30 [INF] The file /js/script-app.js was not modified
+2026-01-30 17:18:07.987 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7295/fonts/remixicon.woff2?t=1730118419915 - null null
+2026-01-30 17:18:07.987 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7295/js/simplebar.min.js - 304 null text/javascript 38.5051ms
+2026-01-30 17:18:08.005 +05:30 [INF] The file /fonts/remixicon.woff2 was not modified
+2026-01-30 17:18:07.987 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7295/js/intlTelInput.min.js - 304 null text/javascript 35.9247ms
+2026-01-30 17:18:07.992 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7295/js/select2.min.js - 304 null text/javascript 41.3467ms
+2026-01-30 17:18:07.993 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7295/js/dropzone.min.js - 304 null text/javascript 40.6266ms
+2026-01-30 17:18:07.994 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7295/js/jquery.repeater.min.js - 304 null text/javascript 40.1131ms
+2026-01-30 17:18:07.995 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7295/js/common.js - 304 null text/javascript 39.2922ms
+2026-01-30 17:18:07.996 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7295/js/datatable-init.js - 304 null text/javascript 38.8543ms
+2026-01-30 17:18:08.009 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7295/fonts/remixicon.woff2?t=1730118419915 - 304 null font/woff2 22.3884ms
+2026-01-30 17:18:08.000 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7295/js/script-app.js - 304 null text/javascript 41.7207ms
+2026-01-30 17:18:07.976 +05:30 [INF] The file /js/Views/Login.js was not modified
+2026-01-30 17:18:07.981 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7295/js/views/login.js - null null
+2026-01-30 17:18:08.032 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7295/js/Views/Login.js - 304 null text/javascript 72.2047ms
+2026-01-30 17:18:08.037 +05:30 [INF] The file /js/views/login.js was not modified
+2026-01-30 17:18:08.037 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7295/_vs/browserLink - 200 null text/javascript; charset=UTF-8 55.8758ms
+2026-01-30 17:18:08.039 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7295/js/views/login.js - 304 null text/javascript 58.2176ms
+2026-01-30 17:18:08.086 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7295/favicon.ico - null null
+2026-01-30 17:18:08.092 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7295/favicon.ico - 404 0 null 6.4692ms
+2026-01-30 17:18:08.093 +05:30 [INF] Request starting HTTP/1.1 GET https://localhost:7295/js/bootstrap.bundle.min.js.map - null null
+2026-01-30 17:18:08.095 +05:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7295/favicon.ico, Response status code: 404
+2026-01-30 17:18:08.112 +05:30 [INF] Sending file. Request path: '/js/bootstrap.bundle.min.js.map'. Physical path: 'E:\Yash\PayRoll\Fleet\RFQUI-Amit-Transactions-13-01-2026\RFQUI-Amit-Transactions-13-01-2026\RFQ.UI\wwwroot\js\bootstrap.bundle.min.js.map'
+2026-01-30 17:18:08.115 +05:30 [INF] Request finished HTTP/1.1 GET https://localhost:7295/js/bootstrap.bundle.min.js.map - 200 332347 text/plain 21.3585ms
+2026-01-30 17:18:13.505 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7295/Login/GetToken - application/json 42
+2026-01-30 17:18:13.516 +05:30 [INF] CORS policy execution failed.
+2026-01-30 17:18:13.517 +05:30 [INF] Request origin https://localhost:7295 does not have permission to access the resource.
+2026-01-30 17:18:13.518 +05:30 [INF] Executing endpoint 'RFQ.UI.Controllers.LoginController.GetToken (RFQ.UI)'
+2026-01-30 17:18:13.527 +05:30 [INF] Route matched with {action = "GetToken", controller = "Login"}. Executing controller action with signature System.Threading.Tasks.Task`1[RFQ.UI.Domain.ResponseDto.NewCommonResponseDto] GetToken(RFQ.UI.Models.LoginDto) on controller RFQ.UI.Controllers.LoginController (RFQ.UI).
+2026-01-30 17:18:13.558 +05:30 [INF] Base URL: https://localhost:7295/api/Login/Login
+2026-01-30 17:18:13.657 +05:30 [INF] Request starting HTTP/1.1 POST https://localhost:7295/api/Login/Login - application/json; charset=utf-8 42
+2026-01-30 17:18:13.659 +05:30 [INF] Request finished HTTP/1.1 POST https://localhost:7295/api/Login/Login - 404 0 null 3.3206ms
+2026-01-30 17:18:13.660 +05:30 [INF] responseData  : 
+2026-01-30 17:18:13.661 +05:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: POST https://localhost:7295/api/Login/Login, Response status code: 404
+2026-01-30 17:18:17.862 +05:30 [INF] API Error : Object reference not set to an instance of an object.
+2026-01-30 17:18:17.863 +05:30 [INF] API Error Inner Exception: 
+
+
+2026-01-30 17:18:17.919 +05:30 [ERR]  Error -------------------- Object reference not set to an instance of an object.
+2026-01-30 17:18:17.920 +05:30 [INF] --------------------------------
+2026-01-30 17:18:17.933 +05:30 [INF]    at RFQ.UI.Infrastructure.Provider.LoginAdaptor.PostApiDataAsync(LoginDto loginDto) in E:\Yash\PayRoll\Fleet\RFQUI-Amit-Transactions-13-01-2026\RFQUI-Amit-Transactions-13-01-2026\RFQ.UI.Infrastructure\Provider\LoginAdaptor.cs:line 51
+   at RFQ.UI.Controllers.LoginController.GetToken(LoginDto input) in E:\Yash\PayRoll\Fleet\RFQUI-Amit-Transactions-13-01-2026\RFQUI-Amit-Transactions-13-01-2026\RFQ.UI\Controllers\LoginController.cs:line 74
+2026-01-30 17:18:17.934 +05:30 [INF] --------------------------------
+2026-01-30 17:18:18.194 +05:30 [INF] Executed action RFQ.UI.Controllers.LoginController.GetToken (RFQ.UI) in 4664.706ms
+2026-01-30 17:18:18.268 +05:30 [INF] Executed endpoint 'RFQ.UI.Controllers.LoginController.GetToken (RFQ.UI)'
+2026-01-30 17:18:18.541 +05:30 [ERR] An unhandled exception has occurred while executing the request.
+System.Exception: Object reference not set to an instance of an object.
+   at RFQ.UI.Infrastructure.Provider.LoginAdaptor.PostApiDataAsync(LoginDto loginDto) in E:\Yash\PayRoll\Fleet\RFQUI-Amit-Transactions-13-01-2026\RFQUI-Amit-Transactions-13-01-2026\RFQ.UI.Infrastructure\Provider\LoginAdaptor.cs:line 51
+   at RFQ.UI.Controllers.LoginController.GetToken(LoginDto input) in E:\Yash\PayRoll\Fleet\RFQUI-Amit-Transactions-13-01-2026\RFQUI-Amit-Transactions-13-01-2026\RFQ.UI\Controllers\LoginController.cs:line 74
+   at lambda_method18(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Program.<>c__DisplayClass0_0.<<<Main>$>b__2>d.MoveNext() in E:\Yash\PayRoll\Fleet\RFQUI-Amit-Transactions-13-01-2026\RFQUI-Amit-Transactions-13-01-2026\RFQ.UI\Program.cs:line 74
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2026-01-30 17:18:18.550 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7295/Login/GetToken - 500 null text/plain; charset=utf-8 5046.4667ms
+2026-01-30 17:18:35.695 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7295/ - null null
+2026-01-30 17:18:35.701 +05:30 [INF] Executing endpoint 'RFQ.UI.Controllers.LoginController.Login (RFQ.UI)'
+2026-01-30 17:18:35.702 +05:30 [INF] Route matched with {action = "Login", controller = "Login"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login() on controller RFQ.UI.Controllers.LoginController (RFQ.UI).
+2026-01-30 17:18:35.709 +05:30 [INF] Executing ViewResult, running view Login.
+2026-01-30 17:18:35.716 +05:30 [INF] Executed ViewResult - view Login executed in 7.7096ms.
+2026-01-30 17:18:35.718 +05:30 [INF] Executed action RFQ.UI.Controllers.LoginController.Login (RFQ.UI) in 15.5234ms
+2026-01-30 17:18:35.720 +05:30 [INF] Executed endpoint 'RFQ.UI.Controllers.LoginController.Login (RFQ.UI)'
+2026-01-30 17:18:35.721 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7295/ - 200 null text/html; charset=utf-8 26.227ms
+2026-01-30 17:18:35.726 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7295/_framework/aspnetcore-browser-refresh.js - null null
+2026-01-30 17:18:35.726 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7295/_vs/browserLink - null null
+2026-01-30 17:18:35.734 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7295/_framework/aspnetcore-browser-refresh.js - 200 16497 application/javascript; charset=utf-8 7.6862ms
+2026-01-30 17:18:35.769 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7295/_vs/browserLink - 200 null text/javascript; charset=UTF-8 43.0452ms

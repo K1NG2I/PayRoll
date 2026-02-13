@@ -1,0 +1,187 @@
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+@{
+    Layout = "_Layout";
+}
+
+@section Scripts {
+    <script src="~/js/Views/Test.js"></script>
+}
+
+<!-- ================= LIST SECTION ================= -->
+<div id="testListSection">
+
+    <div class="row">
+        <div class="col-12">
+            <div class="page-title-box d-flex align-items-center justify-content-between">
+                <div class="col-md-6">
+                    <h1 class="page-title">Test</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-12">
+            <div class="card com-profile-info">
+
+                <!-- Top Header -->
+                <div class="table-top-header">
+                    <h4>List of Test</h4>
+                    <div class="d-flex gap-2">
+                        <div class="table-search-box">
+                            <input type="text"
+                                   id="tableuserSearch"
+                                   class="form-control form-control-sm"
+                                   placeholder="Search..." />
+                            <button type="submit">
+                                <i class="ri-search-line"></i>
+                            </button>
+                        </div>
+                        <div id="exportButtons" class="btn-group" role="group"></div>
+                    </div>
+                </div>
+
+                <!-- Table (⚠️ SAME IDs AS USER) -->
+                <div class="table-responsive">
+                    <table id="GridListTable" class="table dt-responsive nowrap w-100">
+                        <thead class="text-center"></thead>
+                        <tbody class="text-center" id="tableBody"></tbody>
+                    </table>
+                </div>
+
+                <!-- Bottom Area (⚠️ SAME IDs AS USER) -->
+                <div class="datatable-footer-bottom">
+                    <div class="totle-left">
+                        <span id="totalList"></span>
+                    </div>
+
+                    <div id="customPagination"
+                         class="dataTables_paginate paging_simple_numbers"></div>
+
+                    <input type="hidden" id="currentPage" value="1" />
+
+                    <div class="show-page">
+                        <span>Show per page:</span>
+                        <select id="pageLength" class="form-select">
+                            <option value="5">5</option>
+                            <option value="10" selected>10</option>
+                            <option value="25">25</option>
+                            <option value="-1">All</option>
+                        </select>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- ================= FORM SECTION ================= -->
+<div id="testFormSection" style="display:none;">
+
+    <div class="row">
+        <div class="col-12">
+            <div class="page-title-box add">
+                <h1 class="page-title">Edit Test</h1>
+                <div class="add-breadcrumb">
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item">
+                                <a href="#" id="testListSectionLink">Test</a>
+                            </li>
+                            <li class="breadcrumb-item active" aria-current="page">
+                                Edit Test
+                            </li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-12">
+            <div class="card com-profile-info">
+                <div class="top-details">
+                    <h2 class="page-form-title">Test Details</h2>
+
+                    <form class="row all-custom-class" id="testForm">
+
+                        <input type="hidden" id="hdnTestId" />
+
+                        <div class="col-xl-4 col-lg-6">
+                            <div class="item-input">
+                                <label class="form-label">Person Name</label>
+                                <input type="text"
+                                       id="txtPersonName"
+                                       class="form-control" />
+                            </div>
+                        </div>
+
+                        <div class="col-xl-4 col-lg-6">
+                            <div class="item-input">
+                                <label class="form-label">Franchise / Corporate</label>
+                                <input type="text"
+                                       id="txtCompany"
+                                       class="form-control"
+                                       disabled />
+                            </div>
+                        </div>
+
+                        <div class="col-xl-4 col-lg-6">
+                            <div class="item-input">
+                                <label class="form-label">Location</label>
+                                <input type="text"
+                                       id="txtLocation"
+                                       class="form-control"
+                                       disabled />
+                            </div>
+                        </div>
+
+                        <div class="col-xl-4 col-lg-6">
+                            <div class="item-input">
+                                <label class="form-label">Mobile Number</label>
+                                <input type="text"
+                                       id="txtMobileNo"
+                                       class="form-control" />
+                            </div>
+                        </div>
+
+                        <div class="col-xl-4 col-lg-6">
+                            <div class="item-input">
+                                <label class="form-label">Email</label>
+                                <input type="email"
+                                       id="txtEmailId"
+                                       class="form-control" />
+                            </div>
+                        </div>
+
+                        <div class="col-xl-4 col-lg-6">
+                            <div class="item-input">
+                                <label class="form-label">Status</label>
+                                <select id="ddlStatus" class="form-control">
+                                    <option value="true">Active</option>
+                                    <option value="false">Inactive</option>
+                                </select>
+                            </div>
+                        </div>
+
+                    </form>
+                </div>
+
+                <div class="button-main">
+                    <a href="#" class="card-link" id="btnUpdateTest">
+                        <i class="ri-save-line"></i>
+                        <span>Update</span>
+                    </a>
+
+                    <a href="#" class="card-link" id="btnCancelTest">
+                        <i class="ri-close-line"></i>
+                        <span>Cancel</span>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>

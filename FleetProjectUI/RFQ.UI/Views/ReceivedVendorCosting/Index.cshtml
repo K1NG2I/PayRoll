@@ -1,0 +1,211 @@
+﻿@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+
+@{
+    Layout = "_Layout";
+    ViewData["Title"] = "RECEIVED COSTING";
+    bool IsAdd = (bool)ViewData["IsAdd"];
+    bool IsEdit = (bool)ViewData["IsEdit"];
+    bool IsView = (bool)ViewData["IsView"];
+    bool IsCancel = (bool)ViewData["IsCancel"];
+}
+@section Scripts {
+    <script>
+        var IsAdd = @IsAdd.ToString().ToLower();
+        var IsEdit = @IsEdit.ToString().ToLower();
+        var IsView = @IsView.ToString().ToLower();
+        var IsCancel = @IsCancel.ToString().ToLower();
+    </script>
+    <script src="~/js/views/ReceivedVendorCosting.js"></script>
+}
+
+<div class="row">
+    <div class="col-12">
+        <div class="page-title-box add">
+            <h1 class="page-title">Costing Received From Vendor</h1>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-12">
+        <div class="card com-profile-info">
+            <!-- Top Header -->
+            <div class="table-top-header">
+                <h4>List of Received Quote</h4>
+            </div>
+            <div class="table-responsive">
+                <table id="rcostingReceivedTable" class="table dt-responsive nowrap w-100">
+                    <thead>
+                        <tr class="text-center">
+                            <th class="text-center">Sr. No.</th>
+                            <th class="text-center">Indent No</th>
+                            <th class="text-center">Indent Date</th>
+                            <th class="text-center">RFQ No</th>
+                            <th class="text-center">RFQ Date</th>
+                            <th class="text-center">Customer Name</th>
+                            <th class="text-center">RFQ Expired On</th>
+                            <th class="text-center">Vehicle Req On</th>
+                            <th class="text-center">Origin</th>
+                            <th class="text-center">Destination</th>
+                            <th class="text-center">Vehicle Type</th>
+                            <th class="text-center">Available Vehicle</th>
+                            <th class="text-center">Vendor Name</th>
+                            <th class="text-center">Total Hire Cost</th>
+                            <th class="text-center">Vendor Position</th>
+
+                            <th class="text-center">specialInstruction</th>
+                            <th class="text-center">detentionPerDay</th>
+                            <th class="text-center">detentionFreeDays</th>
+                            <th class="text-center">vehicleCount</th>
+                            <th class="text-center">packingName</th>
+                            <th class="text-center">itemName</th>
+                            <th class="text-center">pANNo</th>
+                            
+
+
+                            <th class="text-center">Email</th>
+                            <th class="text-center">View Quote Rate</th>
+                            <th class="text-center">Ask for Re-Bid</th>
+                        </tr>
+                    </thead>
+                    <tbody class="text-center">
+                    </tbody>
+                </table>
+            </div>
+            <div class="button-main">
+                <a href="#" class="card-link" id="SendMail" type="button">
+                    <i class="ri-send-plane-line"></i>
+                    <span>
+                        Send
+                    </span>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="quoteVendorModal" tabindex="-1" aria-labelledby="quoteVendorModalLabel" aria-hidden="true">
+    <div class="modal-dialog" style="max-width:1000Px;width:100%;">
+        <div class="modal-content" style="max-width:1000Px;width:100%;">
+            <div class="modal-header">
+                <h5 class="modal-title" id="driverPopupModalLabel">Quatation Rate</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <!-- Your modal body -->
+            <div class="modal-body">
+                <form class="row all-custom-class" id="QRVendorBodyForm" method="post">
+                    <input type="hidden" id="rfqrateId" />
+                    <div class="row all-custom-class">
+                        <div class="col-lg-3">
+                            <div class="item-input">
+                                <label class="form-label">RFQ NO </label>
+                                <input disabled type="text" class="form-control" placeholder="RFQ No" id="txtRFQNo" />
+                            </div>
+                        </div>
+                        <div class="col-lg-3">
+                            <div class="item-input">
+                                <label class="form-label">RFQ Date</label>
+                                <input disabled type="date" class="form-control" placeholder="RFQ Date" id="txtRFQDate" />
+                            </div>
+                        </div>
+                        <div class="col-lg-3">
+                            <div class="item-input">
+                                <label class="form-label">RFQ Expire On</label>
+                                <input disabled type="datetime-local" class="form-control" placeholder="Expire On" id="txtExpireOn"/>
+                            </div>
+                        </div>
+                        <div class="col-lg-3">
+                            <div class="item-input">
+                                <label class="form-label">Vehicle Req On</label>
+                                <input disabled type="date" class="form-control" placeholder="Vehicle Req On" id="txtVehicleReqOn" />
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="item-input">
+                                <label class="form-label">Vendor Name</label>
+                                <input disabled class="form-control" placeholder="Vendor Name" id="txtVednorName" style="width: 100%;">
+                                <input type="hidden" id="RfqId" name="RfqId">
+                                <input type="hidden" id="vendorId" name="vendorId">
+                            </div>
+                        </div>
+                        <div class="col-lg-3">
+                            <div class="item-input">
+                                <label class="form-label">PAN No </label>
+                                <input disabled type="text" class="form-control" placeholder="PAN No" id="txtPANNo" />
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-lg-3">
+                            <div class="item-input">
+                                <label class="form-label ">Origin/From</label>
+                                <input disabled class="form-control" id="ddlOrigin" style="width: 100%;">
+                            </div>
+                        </div>
+                        <div class="col-lg-3">
+                            <div class="item-input">
+                                <label class="form-label">Destination/To</label>
+                                <input disabled class="form-control" id="ddlDestination" style="width: 100%;">
+                            </div>
+                        </div>
+                        <div class="col-lg-3">
+                            <div class="item-input">
+                                <label class="form-label ">Vehicle Type</label>
+                                <input disabled class="form-control" id="ddlVehicleType" style="width: 100%;">
+                            </div>
+                        </div>
+                        <div class="col-lg-3">
+                            <div class="item-input">
+                                <label class="form-label">No.of Vehicles Req</label>
+                                <input disabled type="text" class="form-control" placeholder="No.of Vehicles" id="txtNoOfVehicles" />
+                            </div>
+                        </div>
+                        <div class="col-lg-3">
+                            <div class="item-input">
+                                <label class="form-label">Item Name</label>
+                                <input disabled class="form-control" id="ddlItemName" style="width: 100%;">
+                            </div>
+                        </div>
+                        <div class="col-lg-3">
+                            <div class="item-input">
+                                <label class="form-label">Packing Type</label>
+                                <input disabled class="form-control" id="ddlPackingType" style="width: 100%;">
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="item-input">
+                                <label class="form-label">Special Instructions </label>
+                                <input disabled type="text" class="form-control" placeholder="Special Instructions" id="txtInstruction" />
+                            </div>
+                        </div>
+                        <div class="col-lg-3">
+                            <div class="item-input">
+                                <label class="form-label"><span>*</span>Available Vehicle Count</label>
+                                <input disabled type="text" class="form-control" placeholder="Available Vehicle Count" id="txtAvailableVehicle" onkeypress="return isNumber(event)" />
+                            </div>
+                        </div>
+                        <div class="col-lg-3">
+                            <div class="item-input">
+                                <label class="form-label"><span>*</span>Total Hire Cost</label>
+                                <input disabled type="text" class="form-control" placeholder="Total Hire Cost" id="txtHireCost" onkeypress="return isNumber(event)" />
+                            </div>
+                        </div>
+                        <div class="col-lg-3">
+                            <div class="item-input">
+                                <label class="form-label"><span>*</span>Detention Per Day</label>
+                                <input disabled type="text" class="form-control" placeholder="Detention Per Day" id="txtDetentionDay" onkeypress="return isNumber(event)" />
+                            </div>
+                        </div>
+                        <div class="col-lg-3">
+                            <div class="item-input">
+                                <label class="form-label"><span>*</span>Detention Free Days</label>
+                                <input disabled type="text" class="form-control" placeholder="Detention Free Days" id="txtDetentionFreeDays" onkeypress="return isNumber(event)" />
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+

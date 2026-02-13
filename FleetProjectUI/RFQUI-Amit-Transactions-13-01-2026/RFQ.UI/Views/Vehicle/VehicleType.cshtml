@@ -1,0 +1,125 @@
+﻿@{
+    Layout = "_Layout";
+    ViewData["Title"] = "VehicleType";
+}
+@section Scripts {
+    <script src="~/js/Views/VehicleType.js"></script>
+}
+<!-- Vehicle Type Table Card -->
+<div class="row">
+    <div class="col-12">
+        <div class="page-title-box add">
+            <h1 class="page-title">Vehicle Type Details</h1>
+            <div class="add-btn">
+                <a href="#" id="btnAdd">
+                    <i class="ri-add-line"></i> <span>Add</span>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="addVehicleTypeDiv" class="card d-none">
+    <form class="form" id="VehicleTypeForm" method="post">
+        <div class="franchise-details">
+            <h2 class="page-form-title">Vehicle Type Details</h2>
+            <div class="row all-custom-class">
+                <div class="col-lg-6">
+                    <div class="item-input">
+                        <label class="form-label">Vehicle Type <span>*</span></label>
+                        <input type="text" class="form-control" id="txtVehicleType"
+                               placeholder="Vehicle Type" maxlength="50" />
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="item-input">
+                        <label class="form-label">Minimum KMS / Day <span>*</span></label>
+                        <input type="text" inputmode="numeric" class="form-control" id="txtminKmsPerDay"
+                               placeholder="Minimum KMS / Day" onkeypress="return isNumber(event)" />
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="button-main">
+            <a href="#" id="btnSaveVehicleType" class="card-link" data-action="save">
+                <i class="ri-save-line"></i>
+                <span>Save</span>
+            </a>
+            <a href="#" id="SavenewButton" class="card-link" data-action="saveNew">
+                <i class="ri-save-line"></i>
+                <span>Save & New</span>
+            </a>
+            <a href="#" id="updateButton" class="card-link d-none">
+                <i class="ri-edit-line"></i>
+                <span>Update</span>
+            </a>
+            <a href="#" class="card-link" id="btnCancel">
+                <i class="ri-close-line"></i>
+                <span>
+                    Cancel
+                </span>
+            </a>
+        </div>
+    </form>
+</div>
+
+@* Vehicle Type Table *@
+<div id="tableDiv" class="card com-profile-info">
+    <!-- Top Header -->
+    <div class="container-fluid">
+        <div class="table-top-header">
+            <h4>Vehicle Type List</h4>
+            <div class="d-flex gap-2">
+                <div id="exportVehicleTypeButtons" class="btn-group" role="group"></div>
+            </div>
+            <div class="d-flex gap-2">
+                <div class="table-search-box">
+                    <input type="text" id="vehicleTypesTableSearch" class="form-control form-control-sm" placeholder="Search...">
+                    <button type="submit"><i class="ri-search-line"></i></button>
+                </div>
+                <div id="exportButtons" class="btn-group" role="group"></div>
+            </div>
+        </div>
+        <!-- Table -->
+        <div class="table-responsive">
+            <table id="GridListTable" class="table dt-responsive nowrap w-100">
+                <thead class="text-center"></thead>
+                <tbody class="text-center" id="tableBody"></tbody>
+            </table>
+            @* <table id="vehicleTypesTable" class="table dt-responsive nowrap w-100">
+                <thead>
+                    <tr class="text-center">
+                        <th class="sortable text-center" data-column="CompanyName" data-order="asc">Company Name</th>
+                        <th class="sortable text-center" data-column="VehicleTypeName" data-order="asc">Vehicle Type Name</th>
+                        <th class="sortable text-center" data-column="MinimumKms" data-order="asc">Minimum KMS / Day</th>
+                        <th class="text-center no-sort">Action</th>
+                    </tr>
+                </thead>
+                <tbody class="text-center">
+                    <!-- Dynamic rows go here -->
+                </tbody>
+            </table> *@
+            <!-- Bottom Area -->
+            <div class="datatable-footer-bottom">
+                <div class="totle-left">
+                    <span id="totalList">Total List: 3</span>
+                </div>
+                <div id="customPagination" class="dataTables_paginate paging_simple_numbers"></div>
+                <input type="hidden" id="currentPage" value="1">
+                <div class="show-page">
+                    <span>Show per page:</span>
+                    <select id="pageLength" class="form-select">
+                        <option value="5">5 </option>
+                        <option value="10" selected>10 </option>
+                        <option value="25">25</option>
+                        <option value="-1">All</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+

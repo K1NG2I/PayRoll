@@ -1,0 +1,6 @@
+@RFQ.API_HostAddress = http://localhost:5163
+
+GET {{RFQ.API_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

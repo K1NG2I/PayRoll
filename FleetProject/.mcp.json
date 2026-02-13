@@ -1,0 +1,8 @@
+{
+  "servers": {
+    "RFQ Docs": {
+      "type": "sse",
+      "url": "https://gitmcp.io/sandipkumbhani/RFQ/branches/active"
+    }
+  }
+}
