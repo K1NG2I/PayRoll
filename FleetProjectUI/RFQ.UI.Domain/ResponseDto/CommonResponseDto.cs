@@ -10,7 +10,7 @@
         public int totalRecordCount { get; set; }
     }
 
-    public class CommanResponseDto
+    public class CommonResponseDto
     {
         public int StatusCode { get; set; }
         public Data Data { get; set; } = new Data();

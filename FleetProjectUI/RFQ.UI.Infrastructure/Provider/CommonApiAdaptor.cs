@@ -87,7 +87,7 @@ namespace RFQ.UI.Infrastructure.Provider
             return JsonConvert.DeserializeObject<T>(content);
         }
 
-        public PageList<T> GenerateResponse<T>(CommanResponseDto commanResponse)
+        public PageList<T> GenerateResponse<T>(CommonResponseDto commanResponse)
         {
             var returnResponse = new PageList<T>(new List<T>(), 0, 0, 0);
             if (commanResponse?.Data?.result != null)

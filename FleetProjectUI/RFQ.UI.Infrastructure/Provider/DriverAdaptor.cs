@@ -94,7 +94,7 @@ namespace RFQ.UI.Infrastructure.Provider
             try
             {
                 var baseUrl = _appSettings.BaseUrl + _appSettings.DriverGetAllDrivers;
-                var responseModel = await _commonApiAdaptor.PostAsync<CommanResponseDto>(baseUrl, pagingParam, _globalClass.Token);
+                var responseModel = await _commonApiAdaptor.PostAsync<CommonResponseDto>(baseUrl, pagingParam, _globalClass.Token);
                 return _commonApiAdaptor.GenerateResponse<DriverResponseDto>(responseModel);
             }
             catch (Exception ex)

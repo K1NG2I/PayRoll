@@ -94,7 +94,7 @@ namespace RFQ.UI.Infrastructure.Provider
             try
             {
                 var baseUrl = _appSettings.BaseUrl + _appSettings.GetAllVehiclePlacement;
-                var responseModel = await _commonApiAdaptor.PostAsync<CommanResponseDto>(baseUrl, pagingParam, _globalClass.Token);
+                var responseModel = await _commonApiAdaptor.PostAsync<CommonResponseDto>(baseUrl, pagingParam, _globalClass.Token);
 
                 return _commonApiAdaptor.GenerateResponse<VehiclePlacementResponseDto>(responseModel);
             }
@@ -234,7 +234,7 @@ namespace RFQ.UI.Infrastructure.Provider
             try
             {
                 var baseUrl = _appSettings.BaseUrl + _appSettings.CheckAwardedVendor;
-                var responseModel = await _commonApiAdaptor.PostAsync<CommanResponseDto>(baseUrl, requestDto, _globalClass.Token);
+                var responseModel = await _commonApiAdaptor.PostAsync<CommonResponseDto>(baseUrl, requestDto, _globalClass.Token);
 
                 if (responseModel != null && responseModel.StatusCode == 200)
                     return Convert.ToBoolean(responseModel.Data);

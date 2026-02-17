@@ -8,7 +8,7 @@ namespace RFQ.Domain.Models
     public class ContactPersonDetails
     {
         [Key]
-        public int ContactPersonId { get; set; }
+        public int ContactPersonDetailId { get; set; }
         public int EmployeeId { get; set; }
         public string Relation { get; set; }
         public string ContactPersonName { get; set; }

@@ -95,3 +95,4 @@ E:\Yash\PayRoll\Fleet\FleetProjectUI\RFQ.UI\obj\Debug\net8.0\staticwebassets.bui
 E:\Yash\PayRoll\Fleet\FleetProjectUI\RFQ.UI\obj\Debug\net8.0\swae.build.ex.cache
 E:\Yash\PayRoll\Fleet\FleetProjectUI\RFQ.UI\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
 E:\Yash\PayRoll\Fleet\FleetProjectUI\RFQ.UI\bin\Debug\net8.0\.mcp.json
+E:\Yash\PayRoll\Fleet\FleetProjectUI\RFQ.UI\obj\Debug\net8.0\RFQ.UI.sourcelink.json

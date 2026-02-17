@@ -55,7 +55,7 @@ namespace RFQ.UI.Infrastructure.Provider
                 using (var httpClient = new HttpClient())
                 {
                     var baseUrl = $"{_appSettings.BaseUrl + _appSettings.GetAllMasterUserActivityLogList}";
-                    var responseModel = await _commonApiAdaptor.PostAsync<CommanResponseDto>(baseUrl, pagingParam, _globalClass.Token);
+                    var responseModel = await _commonApiAdaptor.PostAsync<CommonResponseDto>(baseUrl, pagingParam, _globalClass.Token);
                     if (responseModel?.Data?.result != null)
                     {
                         var activityLog = JsonConvert.DeserializeObject<List<MasterUserActivityLogResponseDto>>(

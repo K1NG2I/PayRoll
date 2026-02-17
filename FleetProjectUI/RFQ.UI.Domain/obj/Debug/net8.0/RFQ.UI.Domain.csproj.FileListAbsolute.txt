@@ -10,3 +10,4 @@ E:\Yash\PayRoll\Fleet\FleetProjectUI\RFQ.UI.Domain\obj\Debug\net8.0\RFQ.UI.Domai
 E:\Yash\PayRoll\Fleet\FleetProjectUI\RFQ.UI.Domain\obj\Debug\net8.0\refint\RFQ.UI.Domain.dll
 E:\Yash\PayRoll\Fleet\FleetProjectUI\RFQ.UI.Domain\obj\Debug\net8.0\RFQ.UI.Domain.pdb
 E:\Yash\PayRoll\Fleet\FleetProjectUI\RFQ.UI.Domain\obj\Debug\net8.0\ref\RFQ.UI.Domain.dll
+E:\Yash\PayRoll\Fleet\FleetProjectUI\RFQ.UI.Domain\obj\Debug\net8.0\RFQ.UI.Domain.sourcelink.json

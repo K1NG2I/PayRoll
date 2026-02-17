@@ -8,7 +8,7 @@ namespace RFQ.UI.Domain.RequestDto
 {
     public class ContactPersonDetailsRequestDto
     {
-        public int ContactPersonId { get; set; }   // 0 for Add
+        public int ContactPersonDetailId { get; set; }   // 0 for Add
 
         public int EmployeeId { get; set; }
 

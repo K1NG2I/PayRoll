@@ -91,7 +91,7 @@ namespace RFQ.Web.API.Controllers
 
                 return Ok(new
                 {
-                    IsSuccess = result,
+                    IsSuccess = true,
                     Message = result
                         ? "Contact person added successfully."
                         : "Failed to add contact person."
@@ -111,11 +111,11 @@ namespace RFQ.Web.API.Controllers
         // =========================
         // UPDATE
         // =========================
-        [HttpPut("Update")]
+        [HttpPost("Update")]
         public async Task<IActionResult> Update(
             [FromBody] ContactPersonDetailsRequestDto request)
         {
-            if (request == null || request.ContactPersonId <= 0)
+            if (request == null || request.ContactPersonDetailId <= 0)
             {
                 return BadRequest(new
                 {
@@ -128,7 +128,7 @@ namespace RFQ.Web.API.Controllers
             {
                 var model = new ContactPersonDetails
                 {
-                    ContactPersonId = request.ContactPersonId,
+                    ContactPersonDetailId = request.ContactPersonDetailId,
                     EmployeeId = request.EmployeeId,
                     Relation = request.Relation,
                     ContactPersonName = request.ContactPersonName,
@@ -142,7 +142,7 @@ namespace RFQ.Web.API.Controllers
 
                 return Ok(new
                 {
-                    IsSuccess = result,
+                    IsSuccess = true,
                     Message = result
                         ? "Contact person updated successfully."
                         : "Contact person not found."

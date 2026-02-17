@@ -15,3 +15,4 @@ E:\Yash\PayRoll\Fleet\FleetProjectUI\RFQ.UI.Application\obj\Debug\net8.0\RFQ.UI.
 E:\Yash\PayRoll\Fleet\FleetProjectUI\RFQ.UI.Application\obj\Debug\net8.0\refint\RFQ.UI.Application.dll
 E:\Yash\PayRoll\Fleet\FleetProjectUI\RFQ.UI.Application\obj\Debug\net8.0\RFQ.UI.Application.pdb
 E:\Yash\PayRoll\Fleet\FleetProjectUI\RFQ.UI.Application\obj\Debug\net8.0\ref\RFQ.UI.Application.dll
+E:\Yash\PayRoll\Fleet\FleetProjectUI\RFQ.UI.Application\obj\Debug\net8.0\RFQ.UI.Application.sourcelink.json

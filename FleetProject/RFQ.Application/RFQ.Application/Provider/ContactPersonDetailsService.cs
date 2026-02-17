@@ -55,7 +55,7 @@ namespace RFQ.Application.Provider
         public async Task<bool> UpdateContactPerson(ContactPersonDetails contactPersonDetails)
         {
             if (contactPersonDetails == null ||
-                contactPersonDetails.ContactPersonId <= 0)
+                contactPersonDetails.ContactPersonDetailId <= 0)
                 return false;
 
             contactPersonDetails.UpdatedOn = DateTime.UtcNow;

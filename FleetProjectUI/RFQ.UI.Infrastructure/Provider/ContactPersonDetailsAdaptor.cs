@@ -6,98 +6,104 @@ using RFQ.UI.Domain.ResponseDto;
 
 namespace RFQ.UI.Infrastructure.Provider
 {
+   
     public class ContactPersonDetailsAdaptor : IContactPersonDetailsAdaptor
+{
+    private readonly AppSettingsGlobal _appSettings;
+    private readonly CommonApiAdaptor _commonApiAdaptor;
+    private readonly GlobalClass _globalClass;
+
+    public ContactPersonDetailsAdaptor(
+        AppSettingsGlobal appSettings,
+        CommonApiAdaptor commonApiAdaptor,
+        GlobalClass globalClass)
     {
-        private readonly AppSettingsGlobal _appSettings;
-        private readonly CommonApiAdaptor _commonApiAdaptor;
-        private readonly GlobalClass _globalClass;
+        _appSettings = appSettings;
+        _commonApiAdaptor = commonApiAdaptor;
+        _globalClass = globalClass;
+    }
 
-        public ContactPersonDetailsAdaptor(
-            AppSettingsGlobal appSettings,
-            CommonApiAdaptor commonApiAdaptor,
-            GlobalClass globalClass)
-        {
-            _appSettings = appSettings;
-            _commonApiAdaptor = commonApiAdaptor;
-            _globalClass = globalClass;
-        }
-
-        // =========================
-        // LIST BY EMPLOYEE (FIXED)
-        // =========================
         public async Task<List<ContactPersonDetailsResponseDto>> GetByEmployeeId(int employeeId)
         {
-            var url =
-                $"{_appSettings.BaseUrl}{_appSettings.GetContactPersonsByEmployee}/{employeeId}";
+            try
+            {
+                var url =
+                    $"{_appSettings.BaseUrl}{_appSettings.GetContactPersonsByEmployee}/{employeeId}";
 
-            var responseModel =
-                await _commonApiAdaptor.GetAsync<CommanResponseDto>(
-                    url,
-                    _globalClass.Token);
+                var response =
+                    await _commonApiAdaptor.GetAsync<
+                        CommonListResponseDto<ContactPersonDetailsResponseDto>
+                    >(url, _globalClass.Token);
 
-            var pageResult =
-                _commonApiAdaptor.GenerateResponse<ContactPersonDetailsResponseDto>(responseModel);
-
-            return pageResult?.Result ?? new List<ContactPersonDetailsResponseDto>();
+                return response?.Data ?? new List<ContactPersonDetailsResponseDto>();
+            }
+            catch (Exception)
+            {
+                throw;
+            }
         }
 
 
-        // =========================
-        // ADD (FIXED RESPONSE CHECK)
-        // =========================
         public async Task<bool> Add(ContactPersonDetailsRequestDto request)
+    {
+        try
         {
             var url = _appSettings.BaseUrl + _appSettings.AddContactPerson;
 
-            var response = await _commonApiAdaptor
-                .PostAsync<ApiResultDto>(
+            var responseModel =
+                await _commonApiAdaptor.PostAsync<CommonResponseDto>(
                     url,
                     request,
                     _globalClass.Token);
 
-            return response != null && response.IsSuccess;
+            return responseModel != null;
         }
+        catch (Exception)
+        {
+            throw;
+        }
+    }
 
-        // =========================
-        // UPDATE (FIXED)
-        // =========================
-        public async Task<bool> Update(ContactPersonDetailsRequestDto request)
+    public async Task<bool> Update(ContactPersonDetailsRequestDto request)
+    {
+        try
         {
             var url = _appSettings.BaseUrl + _appSettings.UpdateContactPerson;
 
-            var response = await _commonApiAdaptor
-                .PostAsync<ApiResultDto>(
+            var responseModel =
+                await _commonApiAdaptor.PostAsync<CommonResponseDto>(
                     url,
                     request,
                     _globalClass.Token);
 
-            return response != null && response.IsSuccess;
+            return responseModel != null;
         }
+        catch (Exception)
+        {
+            throw;
+        }
+    }
 
-        // =========================
-        // DELETE (FIXED)
-        // =========================
-        public async Task<bool> Delete(int contactPersonDetailId, int updatedBy)
+    public async Task<bool> Delete(int contactPersonDetailId, int updatedBy)
+    {
+        try
         {
             var url =
                 $"{_appSettings.BaseUrl}{_appSettings.DeleteContactPerson}/" +
                 $"{contactPersonDetailId}/{updatedBy}";
 
-            var response = await _commonApiAdaptor
-                .DeleteAsync<ApiResultDto>(
+            var responseModel =
+                await _commonApiAdaptor.DeleteAsync<CommonResponseDto>(
                     url,
                     _globalClass.Token);
 
-            return response != null && response.IsSuccess;
+            return responseModel != null;
+        }
+        catch (Exception)
+        {
+            throw;
         }
     }
+}
 
-    // =========================
-    // API RESULT DTO
-    // =========================
-    public class ApiResultDto
-    {
-        public bool IsSuccess { get; set; }
-        public string Message { get; set; }
-    }
 }

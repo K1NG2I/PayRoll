@@ -9,7 +9,7 @@ namespace RFQ.Infrastructure.Efcore.Configration
         public void Configure(EntityTypeBuilder<ContactPersonDetails> builder)
         {
             builder.ToTable("com_mst_contactpersondetails");
-            builder.HasKey(x => x.ContactPersonId);
+            builder.HasKey(x => x.ContactPersonDetailId);
         }
     }
 }

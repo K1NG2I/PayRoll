@@ -25,7 +25,7 @@ namespace RFQ.UI.Infrastructure.Provider
             try
             {
                 var baseUrl = _appSettings.BaseUrl + _appSettings.GetAllEmployee;
-                var responseModel = await _commonApiAdaptor.PostAsync<CommanResponseDto>(baseUrl, pagingParam, _globalClass.Token);
+                var responseModel = await _commonApiAdaptor.PostAsync<CommonResponseDto>(baseUrl, pagingParam, _globalClass.Token);
                 return _commonApiAdaptor.GenerateResponse<EmployeeResponseDto>(responseModel);
             }
             catch (Exception)
@@ -40,7 +40,7 @@ namespace RFQ.UI.Infrastructure.Provider
                 var baseUrl = _appSettings.BaseUrl + _appSettings.UpdateEmployee;
 
                 var responseModel = await _commonApiAdaptor
-                    .PutAsync<CommanResponseDto>(
+                    .PutAsync<CommonResponseDto>(
                         baseUrl,
                         request,
                         _globalClass.Token

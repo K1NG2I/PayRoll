@@ -21,7 +21,7 @@ namespace RFQ.Infrastructure.Efcore.Providers
             return await _context.contactPersonDetails
                 .AsNoTracking()
                 .Where(x => x.EmployeeId == employeeId && x.IsActive == true)
-                .OrderBy(x => x.ContactPersonId)
+                .OrderBy(x => x.ContactPersonDetailId)
                 .ToListAsync();
         }
 
@@ -32,7 +32,7 @@ namespace RFQ.Infrastructure.Efcore.Providers
         {
             return await _context.contactPersonDetails
                 .AsNoTracking()
-                .FirstOrDefaultAsync(x => x.ContactPersonId == ContactPersonId);
+                .FirstOrDefaultAsync(x => x.ContactPersonDetailId == ContactPersonId);
         }
 
         // =========================
@@ -50,7 +50,7 @@ namespace RFQ.Infrastructure.Efcore.Providers
         public async Task<bool> Update(ContactPersonDetails contactPerson)
         {
             var existing = await _context.contactPersonDetails
-                .FirstOrDefaultAsync(x => x.ContactPersonId == contactPerson.ContactPersonId);
+                .FirstOrDefaultAsync(x => x.ContactPersonDetailId == contactPerson.ContactPersonDetailId);
 
             if (existing == null)
                 return false;
@@ -71,7 +71,7 @@ namespace RFQ.Infrastructure.Efcore.Providers
         public async Task<bool> SoftDelete(int ContactPersonId, int updatedBy)
         {
             var existing = await _context.contactPersonDetails
-                .FirstOrDefaultAsync(x => x.ContactPersonId == ContactPersonId);
+                .FirstOrDefaultAsync(x => x.ContactPersonDetailId == ContactPersonId);
 
             if (existing == null)
                 return false;

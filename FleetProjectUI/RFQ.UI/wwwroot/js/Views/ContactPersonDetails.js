@@ -149,7 +149,7 @@ function DeleteContactPerson(id) {
         if (!result.isConfirmed) return;
 
         $.ajax({
-            url: `/ContactPersonDetails/Delete/${id}/${updatedBy}`,
+            url: `/ContactPersonDetails/Delete?contactPersonDetailId=${id}&updatedBy=${updatedBy}`,
             type: 'DELETE',
             success: function (res) {
                 if (res.isSuccess) {
