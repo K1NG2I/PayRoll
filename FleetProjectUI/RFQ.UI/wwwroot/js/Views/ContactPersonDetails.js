@@ -1,17 +1,39 @@
 ﻿var contactPersonList = [];
 
+$(document).ready(function () {
+
+    // Cancel button
+    $('#btnCancelContactPerson').on('click', function (e) {
+        e.preventDefault();
+        CancelContactPerson();
+    });
+
+    // Add button
+    $('#btnAddContactPerson').on('click', function (e) {
+        e.preventDefault();
+        ClearContactPersonForm();
+        $('#contactPersonListSection').hide();
+        $('#contactPersonFormSection').show();
+    });
+
+    SaveContactPerson(); // 👈 REQUIRED (like UpdateEmployee)
+});
+
+
 // =========================
-// INIT (called when employee edit opens)
+// LOAD LIST (Called from Employee.js)
 // =========================
 function LoadContactPersons(employeeId) {
+
     if (!employeeId || employeeId <= 0) return;
 
     $.ajax({
-        url: '/ContactPersonDetails/GetByEmployee',
-        type: 'GET',
+        type: "GET",
+        url: "/ContactPersonDetails/GetByEmployee",
         data: { employeeId: employeeId },
-        success: function (response) {
-            contactPersonList = response || [];
+        success: function (result) {
+
+            contactPersonList = result || [];
             RenderContactPersonTable();
         },
         error: function () {
@@ -20,14 +42,16 @@ function LoadContactPersons(employeeId) {
     });
 }
 
+
 // =========================
 // RENDER TABLE
 // =========================
 function RenderContactPersonTable() {
+
     var tbody = $('#contactPersonTableBody');
     tbody.empty();
 
-    if (contactPersonList.length === 0) {
+    if (!contactPersonList || contactPersonList.length === 0) {
         tbody.append(`
             <tr>
                 <td colspan="6">No contact persons found</td>
@@ -37,6 +61,7 @@ function RenderContactPersonTable() {
     }
 
     contactPersonList.forEach(item => {
+
         tbody.append(`
             <tr>
                 <td>${item.relation}</td>
@@ -58,86 +83,101 @@ function RenderContactPersonTable() {
     });
 }
 
-// =========================
-// ADD BUTTON
-// =========================
-$('#btnAddContactPerson').on('click', function (e) {
-    e.preventDefault();
-    ClearContactPersonForm();
-    $('#contactPersonListSection').hide();
-    $('#contactPersonFormSection').show();
-});
 
 // =========================
 // EDIT
 // =========================
-function EditContactPerson(id) {
-    var item = contactPersonList.find(x => x.contactPersonDetailId === id);
-    if (!item) return;
+function EditContactPerson(contactPersonDetailId) {
 
+    console.log("EditContactPerson called with:", contactPersonDetailId);
+
+    var item = contactPersonList.find(x => x.contactPersonDetailId == contactPersonDetailId);
+    if (!item) {
+        toastr.error("Contact person not found");
+        return;
+    }
+
+    // CRITICAL: Set hidden ID first
     $('#hdnContactPersonDetailId').val(item.contactPersonDetailId);
+
+    // Bind values
     $('#txtRelation').val(item.relation);
     $('#txtContactPersonName').val(item.contactPersonName);
     $('#txtContactAadhaar').val(item.aadhaarNumber);
     $('#txtContactPan').val(item.panNumber);
     $('#ddlContactStatus').val(item.isActive.toString());
 
+    // Toggle UI
     $('#contactPersonListSection').hide();
     $('#contactPersonFormSection').show();
 }
 
+
 // =========================
-// SAVE (ADD / UPDATE)
+// SAVE / UPDATE (Employee-style binding)
 // =========================
-$('#btnSaveContactPerson').on('click', function (e) {
-    e.preventDefault();
+function SaveContactPerson() {
 
-    var employeeId = $('#hdnEmployeeId').val();
-    if (!employeeId) {
-        toastr.warning("Employee not selected");
-        return;
-    }
+    $('#btnSaveContactPerson').off('click').on('click', function (e) {
 
-    var request = {
-        ContactPersonDetailId: $('#hdnContactPersonDetailId').val() || 0,
-        EmployeeId: employeeId,
-        Relation: $('#txtRelation').val(),
-        ContactPersonName: $('#txtContactPersonName').val(),
-        AadhaarNumber: $('#txtContactAadhaar').val(),
-        PanNumber: $('#txtContactPan').val(),
-        IsActive: $('#ddlContactStatus').val() === 'true'
-    };
+        e.preventDefault();
 
-    var isUpdate = request.ContactPersonDetailId > 0;
-    var url = isUpdate
-        ? '/ContactPersonDetails/Update'
-        : '/ContactPersonDetails/Add';
-
-    $.ajax({
-        url: url,
-        type: isUpdate ? 'PUT' : 'POST',
-        contentType: 'application/json',
-        data: JSON.stringify(request),
-        success: function (res) {
-            if (res.isSuccess) {
-                toastr.success(res.message);
-                LoadContactPersons(employeeId);
-                CancelContactPerson();
-            } else {
-                toastr.error(res.message || "Operation failed");
-            }
-        },
-        error: function () {
-            toastr.error("Failed to save contact person");
+        var employeeId = $('#hdnEmployeeId').val();
+        if (!employeeId) {
+            toastr.warning("Employee not selected");
+            return;
         }
+
+        var request = {
+            ContactPersonDetailId: $('#hdnContactPersonDetailId').val() || 0,
+            EmployeeId: employeeId,
+            Relation: $('#txtRelation').val(),
+            ContactPersonName: $('#txtContactPersonName').val(),
+            AadhaarNumber: $('#txtContactAadhaar').val(),
+            PanNumber: $('#txtContactPan').val(),
+            IsActive: $('#ddlContactStatus').val() === "true"
+        };
+
+        console.log("Sending ContactPerson payload:", request);
+
+        var isUpdate = request.ContactPersonDetailId > 0;
+        var url = isUpdate
+            ? "/ContactPersonDetails/Update"
+            : "/ContactPersonDetails/Add";
+
+        $.ajax({
+            type: isUpdate ? "PUT" : "POST",
+            url: url,
+            contentType: "application/json; charset=utf-8",
+            data: JSON.stringify(request),
+            success: function (result) {
+
+                if (result.result === "success") {
+
+                    toastr.success(result.message || "Operation successful");
+
+                    LoadContactPersons(employeeId);
+
+                    $('#contactPersonFormSection').hide();
+                    $('#contactPersonListSection').show();
+                }
+                else {
+                    toastr.error(result.message || "Failed to save contact person");
+                }
+            },
+            error: function () {
+                toastr.error("Error saving contact person");
+            }
+        });
+
     });
-});
+}
+
 
 // =========================
-// DELETE
+// DELETE (Aligned to employee success style)
 // =========================
-function DeleteContactPerson(id) {
-    var updatedBy = 1; // TODO: replace with logged-in user id
+function DeleteContactPerson(contactPersonDetailId) {
 
     Swal.fire({
         title: 'Are you sure?',
@@ -146,44 +186,49 @@ function DeleteContactPerson(id) {
         showCancelButton: true,
         confirmButtonText: 'Yes, delete it!'
     }).then((result) => {
+
         if (!result.isConfirmed) return;
 
         $.ajax({
-            url: `/ContactPersonDetails/Delete?contactPersonDetailId=${id}&updatedBy=${updatedBy}`,
-            type: 'DELETE',
-            success: function (res) {
-                if (res.isSuccess) {
-                    toastr.success(res.message);
+            type: "DELETE",
+            url: `/ContactPersonDetails/Delete?contactPersonDetailId=${contactPersonDetailId}`,
+            success: function (result) {
+
+                if (result.result === "success") {
+
+                    toastr.success(result.message || "Deleted successfully");
+
                     LoadContactPersons($('#hdnEmployeeId').val());
-                } else {
-                    toastr.error(res.message);
+                }
+                else {
+                    toastr.error(result.message || "Delete failed");
                 }
             },
             error: function () {
-                toastr.error("Failed to delete contact person");
+                toastr.error("Error deleting contact person");
             }
         });
     });
 }
 
+
 // =========================
 // CANCEL
 // =========================
-$('#btnCancelContactPerson').on('click', function (e) {
-    e.preventDefault();
-    CancelContactPerson();
-});
-
 function CancelContactPerson() {
+
     ClearContactPersonForm();
+
     $('#contactPersonFormSection').hide();
     $('#contactPersonListSection').show();
 }
+
 
 // =========================
 // CLEAR FORM
 // =========================
 function ClearContactPersonForm() {
+
     $('#hdnContactPersonDetailId').val('');
     $('#txtRelation').val('');
     $('#txtContactPersonName').val('');

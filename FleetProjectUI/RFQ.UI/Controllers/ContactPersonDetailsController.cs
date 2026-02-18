@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Http.HttpResults;
+using Microsoft.AspNetCore.Mvc;
 using RFQ.UI.Application.Interface;
 using RFQ.UI.Domain.RequestDto;
 using RFQ.UI.Extension;
@@ -96,9 +97,19 @@ namespace RFQ.UI.Controllers
             {
                 var success = await _contactPersonService.Update(request);
 
+                if (success)
+                {
+                    return Json(new
+                    {
+                        result = "success",
+                        message = "Employee updated successfully"
+                    });
+                }
+
                 return Json(new
                 {
-                    result = success ? "success" : "error"
+                    result = "error",
+                    message = "Failed to update employee"
                 });
             }
             catch (Exception ex)

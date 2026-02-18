@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("RFQ.UI")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9cd69573c2179c5b83583b5fba2bb3920e4cfda0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+cc0f9dd2dc26839c2ce2b526ae6e8accb1710a0e")]
 [assembly: System.Reflection.AssemblyProductAttribute("RFQ.UI")]
 [assembly: System.Reflection.AssemblyTitleAttribute("RFQ.UI")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
