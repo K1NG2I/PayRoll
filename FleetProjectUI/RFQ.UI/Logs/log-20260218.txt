@@ -490,3 +490,231 @@
 2026-02-18 10:17:34.073 +05:30 [INF] Executed action RFQ.UI.Controllers.ContactPersonDetailsController.Update (RFQ.UI) in 7891.4046ms
 2026-02-18 10:17:34.074 +05:30 [INF] Executed endpoint 'RFQ.UI.Controllers.ContactPersonDetailsController.Update (RFQ.UI)'
 2026-02-18 10:17:34.074 +05:30 [INF] Request finished HTTP/2 PUT https://localhost:7295/ContactPersonDetails/Update - 200 null application/json; charset=utf-8 7898.4472ms
+2026-02-18 10:21:17.323 +05:30 [INF] User profile is available. Using 'C:\Users\Dev2\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-02-18 10:21:17.535 +05:30 [INF] Now listening on: https://localhost:7295
+2026-02-18 10:21:17.537 +05:30 [INF] Now listening on: http://localhost:5029
+2026-02-18 10:21:17.740 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-02-18 10:21:17.741 +05:30 [INF] Hosting environment: Development
+2026-02-18 10:21:17.742 +05:30 [INF] Content root path: E:\Yash\PayRoll\Fleet\FleetProjectUI\RFQ.UI
+2026-02-18 10:21:18.299 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7295/ - null null
+2026-02-18 10:21:18.450 +05:30 [INF] Executing endpoint 'RFQ.UI.Controllers.LoginController.Login (RFQ.UI)'
+2026-02-18 10:21:18.463 +05:30 [INF] Route matched with {action = "Login", controller = "Login"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login() on controller RFQ.UI.Controllers.LoginController (RFQ.UI).
+2026-02-18 10:21:18.477 +05:30 [INF] Executing ViewResult, running view Login.
+2026-02-18 10:21:18.565 +05:30 [INF] Executed ViewResult - view Login executed in 90.8292ms.
+2026-02-18 10:21:18.573 +05:30 [INF] Executed action RFQ.UI.Controllers.LoginController.Login (RFQ.UI) in 107.5585ms
+2026-02-18 10:21:18.575 +05:30 [INF] Executed endpoint 'RFQ.UI.Controllers.LoginController.Login (RFQ.UI)'
+2026-02-18 10:21:18.582 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7295/ - 200 null text/html; charset=utf-8 291.899ms
+2026-02-18 10:21:19.207 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7295/_framework/aspnetcore-browser-refresh.js - null null
+2026-02-18 10:21:19.207 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7295/_vs/browserLink - null null
+2026-02-18 10:21:19.213 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7295/_framework/aspnetcore-browser-refresh.js - 200 16497 application/javascript; charset=utf-8 6.4794ms
+2026-02-18 10:21:19.242 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7295/_vs/browserLink - 200 null text/javascript; charset=UTF-8 34.9233ms
+2026-02-18 10:21:19.275 +05:30 [INF] Request starting HTTP/1.1 GET https://localhost:7295/js/bootstrap.bundle.min.js.map - null null
+2026-02-18 10:21:19.293 +05:30 [INF] Sending file. Request path: '/js/bootstrap.bundle.min.js.map'. Physical path: 'E:\Yash\PayRoll\Fleet\FleetProjectUI\RFQ.UI\wwwroot\js\bootstrap.bundle.min.js.map'
+2026-02-18 10:21:19.294 +05:30 [INF] Request finished HTTP/1.1 GET https://localhost:7295/js/bootstrap.bundle.min.js.map - 200 332347 text/plain 18.8241ms
+2026-02-18 10:21:19.441 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7295/favicon.ico - null null
+2026-02-18 10:21:19.447 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7295/favicon.ico - 404 0 null 5.6495ms
+2026-02-18 10:21:19.449 +05:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7295/favicon.ico, Response status code: 404
+2026-02-18 10:21:24.945 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7295/Login/GetToken - application/json 42
+2026-02-18 10:21:24.953 +05:30 [INF] CORS policy execution failed.
+2026-02-18 10:21:24.954 +05:30 [INF] Request origin https://localhost:7295 does not have permission to access the resource.
+2026-02-18 10:21:24.956 +05:30 [INF] Executing endpoint 'RFQ.UI.Controllers.LoginController.GetToken (RFQ.UI)'
+2026-02-18 10:21:24.965 +05:30 [INF] Route matched with {action = "GetToken", controller = "Login"}. Executing controller action with signature System.Threading.Tasks.Task`1[RFQ.UI.Domain.ResponseDto.NewCommonResponseDto] GetToken(RFQ.UI.Models.LoginDto) on controller RFQ.UI.Controllers.LoginController (RFQ.UI).
+2026-02-18 10:21:24.998 +05:30 [INF] Base URL: https://localhost:7272/api/Login/Login
+2026-02-18 10:21:25.111 +05:30 [INF] responseData  : {"statusCode":200,"data":{"statusCode":200,"data":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Imt1bGthcm5pNjE5eUBnbWFpbC5jb20iLCJwcm9maWxlaWQiOiIxIiwiY29tcGFueWlkIjoiMyIsInBlcnNvbm5hbWUiOiJZYXNoIEt1bGthcm5pIiwidXNlcmlkIjoiMiIsImxvY2F0aW9uaWQiOiIiLCJleHAiOjE3NzE0MzM0ODUsImlzcyI6IjBFMzIyNjE2LTA5QTgtNEU3NC1CRThCLTY3MzVCNDc4QzExMCIsImF1ZCI6IjBFMzIyNjE2LTA5QTgtNEU3NC1CRThCLTY3MzVCNDc4QzExMCJ9.cjUmk1epLQO6eNMxfn6WC5ZInxR9e7_SOJgFjt7ZqKc","message":"Login successful","errorMessage":null},"message":"Success","errorMessage":null}
+2026-02-18 10:21:25.178 +05:30 [INF] Executing ObjectResult, writing value of type 'RFQ.UI.Domain.ResponseDto.NewCommonResponseDto'.
+2026-02-18 10:21:25.192 +05:30 [INF] Executed action RFQ.UI.Controllers.LoginController.GetToken (RFQ.UI) in 226.1378ms
+2026-02-18 10:21:25.194 +05:30 [INF] Executed endpoint 'RFQ.UI.Controllers.LoginController.GetToken (RFQ.UI)'
+2026-02-18 10:21:25.194 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7295/Login/GetToken - 200 null application/json; charset=utf-8 249.6819ms
+2026-02-18 10:21:25.197 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7295/MasterUserActivityLog/AddMasterUserActivityLog - application/json 93
+2026-02-18 10:21:25.200 +05:30 [INF] CORS policy execution failed.
+2026-02-18 10:21:25.200 +05:30 [INF] Request origin https://localhost:7295 does not have permission to access the resource.
+2026-02-18 10:21:25.201 +05:30 [INF] Executing endpoint 'RFQ.UI.Controllers.MasterUserActivityLogController.AddMasterUserActivityLog (RFQ.UI)'
+2026-02-18 10:21:25.205 +05:30 [INF] Route matched with {action = "AddMasterUserActivityLog", controller = "MasterUserActivityLog"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] AddMasterUserActivityLog(RFQ.UI.Domain.RequestDto.MasterUserActivityLogRequestDto) on controller RFQ.UI.Controllers.MasterUserActivityLogController (RFQ.UI).
+2026-02-18 10:21:25.206 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7295/Login/Landing - null null
+2026-02-18 10:21:25.212 +05:30 [INF] Executing endpoint 'RFQ.UI.Controllers.LoginController.Landing (RFQ.UI)'
+2026-02-18 10:21:25.216 +05:30 [INF] Route matched with {action = "Landing", controller = "Login"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Landing() on controller RFQ.UI.Controllers.LoginController (RFQ.UI).
+2026-02-18 10:21:25.226 +05:30 [INF] Start processing HTTP request GET https://localhost:7272/api/MenuList/GetMenu/1
+2026-02-18 10:21:25.227 +05:30 [INF] Start processing HTTP request POST https://localhost:7272/api/MasterUserActivityLog/AddMasterUserActivityLog
+2026-02-18 10:21:25.229 +05:30 [INF] Sending HTTP request GET https://localhost:7272/api/MenuList/GetMenu/1
+2026-02-18 10:21:25.229 +05:30 [INF] Sending HTTP request POST https://localhost:7272/api/MasterUserActivityLog/AddMasterUserActivityLog
+2026-02-18 10:21:25.265 +05:30 [INF] Received HTTP response headers after 33.795ms - 200
+2026-02-18 10:21:25.267 +05:30 [INF] End processing HTTP request after 41.7792ms - 200
+2026-02-18 10:21:25.268 +05:30 [INF] Received HTTP response headers after 37.2552ms - 200
+2026-02-18 10:21:25.269 +05:30 [INF] End processing HTTP request after 42.1923ms - 200
+2026-02-18 10:21:25.463 +05:30 [INF] Executing JsonResult, writing value of type 'RFQ.UI.Domain.ResponseDto.NewCommonResponseDto'.
+2026-02-18 10:21:25.464 +05:30 [INF] Start processing HTTP request GET https://localhost:7272/api/CompanyProfileRight/GetProfileRightsByProfileId/1
+2026-02-18 10:21:25.466 +05:30 [INF] Sending HTTP request GET https://localhost:7272/api/CompanyProfileRight/GetProfileRightsByProfileId/1
+2026-02-18 10:21:25.468 +05:30 [INF] Executed action RFQ.UI.Controllers.MasterUserActivityLogController.AddMasterUserActivityLog (RFQ.UI) in 261.4251ms
+2026-02-18 10:21:25.469 +05:30 [INF] Executed endpoint 'RFQ.UI.Controllers.MasterUserActivityLogController.AddMasterUserActivityLog (RFQ.UI)'
+2026-02-18 10:21:25.470 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7295/MasterUserActivityLog/AddMasterUserActivityLog - 200 null application/json; charset=utf-8 273.601ms
+2026-02-18 10:21:25.471 +05:30 [INF] Received HTTP response headers after 5.0051ms - 200
+2026-02-18 10:21:25.474 +05:30 [INF] End processing HTTP request after 10.5685ms - 200
+2026-02-18 10:21:25.480 +05:30 [INF] Executing ViewResult, running view Landing.
+2026-02-18 10:21:26.005 +05:30 [INF] Executed ViewResult - view Landing executed in 525.3414ms.
+2026-02-18 10:21:26.007 +05:30 [INF] Executed action RFQ.UI.Controllers.LoginController.Landing (RFQ.UI) in 789.966ms
+2026-02-18 10:21:26.008 +05:30 [INF] Executed endpoint 'RFQ.UI.Controllers.LoginController.Landing (RFQ.UI)'
+2026-02-18 10:21:26.010 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7295/Login/Landing - 200 null text/html; charset=utf-8 804.1603ms
+2026-02-18 10:21:26.039 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7295/_framework/aspnetcore-browser-refresh.js - null null
+2026-02-18 10:21:26.039 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7295/_vs/browserLink - null null
+2026-02-18 10:21:26.042 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7295/_framework/aspnetcore-browser-refresh.js - 200 16497 application/javascript; charset=utf-8 3.173ms
+2026-02-18 10:21:26.058 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7295/_vs/browserLink - 200 null text/javascript; charset=UTF-8 19.9705ms
+2026-02-18 10:21:28.056 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7295/Employee/index - null null
+2026-02-18 10:21:28.060 +05:30 [INF] Executing endpoint 'RFQ.UI.Controllers.EmployeeController.Index (RFQ.UI)'
+2026-02-18 10:21:28.063 +05:30 [INF] Route matched with {action = "Index", controller = "Employee"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index() on controller RFQ.UI.Controllers.EmployeeController (RFQ.UI).
+2026-02-18 10:21:28.065 +05:30 [INF] Start processing HTTP request GET https://localhost:7272/api/MenuList/GetMenu/1
+2026-02-18 10:21:28.065 +05:30 [INF] Sending HTTP request GET https://localhost:7272/api/MenuList/GetMenu/1
+2026-02-18 10:21:28.070 +05:30 [INF] Received HTTP response headers after 3.7003ms - 200
+2026-02-18 10:21:28.071 +05:30 [INF] End processing HTTP request after 5.7167ms - 200
+2026-02-18 10:21:28.072 +05:30 [INF] Start processing HTTP request GET https://localhost:7272/api/CompanyProfileRight/GetProfileRightsByProfileId/1
+2026-02-18 10:21:28.073 +05:30 [INF] Sending HTTP request GET https://localhost:7272/api/CompanyProfileRight/GetProfileRightsByProfileId/1
+2026-02-18 10:21:28.077 +05:30 [INF] Received HTTP response headers after 3.9113ms - 200
+2026-02-18 10:21:28.078 +05:30 [INF] End processing HTTP request after 5.868ms - 200
+2026-02-18 10:21:28.080 +05:30 [INF] Executing ViewResult, running view Index.
+2026-02-18 10:21:28.095 +05:30 [INF] Executed ViewResult - view Index executed in 15.7962ms.
+2026-02-18 10:21:28.096 +05:30 [INF] Executed action RFQ.UI.Controllers.EmployeeController.Index (RFQ.UI) in 31.6749ms
+2026-02-18 10:21:28.097 +05:30 [INF] Executed endpoint 'RFQ.UI.Controllers.EmployeeController.Index (RFQ.UI)'
+2026-02-18 10:21:28.098 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7295/Employee/index - 200 null text/html; charset=utf-8 42.306ms
+2026-02-18 10:21:28.102 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7295/js/Views/ContactPersonDetails.js?v=1.2 - null null
+2026-02-18 10:21:28.104 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7295/_framework/aspnetcore-browser-refresh.js - null null
+2026-02-18 10:21:28.109 +05:30 [INF] Sending file. Request path: '/js/Views/ContactPersonDetails.js'. Physical path: 'E:\Yash\PayRoll\Fleet\FleetProjectUI\RFQ.UI\wwwroot\js\Views\ContactPersonDetails.js'
+2026-02-18 10:21:28.110 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7295/_framework/aspnetcore-browser-refresh.js - 200 16497 application/javascript; charset=utf-8 5.8027ms
+2026-02-18 10:21:28.110 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7295/_vs/browserLink - null null
+2026-02-18 10:21:28.111 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7295/js/Views/ContactPersonDetails.js?v=1.2 - 200 6957 text/javascript 9.2304ms
+2026-02-18 10:21:28.127 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7295/_vs/browserLink - 200 null text/javascript; charset=UTF-8 16.4095ms
+2026-02-18 10:21:28.211 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7295/Employee/ViewEmployeeList - application/json 136
+2026-02-18 10:21:28.214 +05:30 [INF] CORS policy execution failed.
+2026-02-18 10:21:28.215 +05:30 [INF] Request origin https://localhost:7295 does not have permission to access the resource.
+2026-02-18 10:21:28.216 +05:30 [INF] Executing endpoint 'RFQ.UI.Controllers.EmployeeController.ViewEmployeeList (RFQ.UI)'
+2026-02-18 10:21:28.220 +05:30 [INF] Route matched with {action = "ViewEmployeeList", controller = "Employee"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ViewEmployeeList(RFQ.UI.Domain.RequestDto.PagingParam) on controller RFQ.UI.Controllers.EmployeeController (RFQ.UI).
+2026-02-18 10:21:28.232 +05:30 [INF] Start processing HTTP request POST https://localhost:7272/api/Employee/GetAllEmployees
+2026-02-18 10:21:28.233 +05:30 [INF] Sending HTTP request POST https://localhost:7272/api/Employee/GetAllEmployees
+2026-02-18 10:21:28.239 +05:30 [INF] Received HTTP response headers after 5.8477ms - 200
+2026-02-18 10:21:28.240 +05:30 [INF] End processing HTTP request after 8.3524ms - 200
+2026-02-18 10:21:28.258 +05:30 [INF] Executing JsonResult, writing value of type '<>f__AnonymousType2`5[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Collections.Generic.List`1[[RFQ.UI.Domain.ResponseDto.EmployeeResponseDto, RFQ.UI.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-02-18 10:21:28.271 +05:30 [INF] Executed action RFQ.UI.Controllers.EmployeeController.ViewEmployeeList (RFQ.UI) in 50.106ms
+2026-02-18 10:21:28.272 +05:30 [INF] Executed endpoint 'RFQ.UI.Controllers.EmployeeController.ViewEmployeeList (RFQ.UI)'
+2026-02-18 10:21:28.274 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7295/Employee/ViewEmployeeList - 200 null application/json; charset=utf-8 63.1523ms
+2026-02-18 10:21:29.524 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7295/ContactPersonDetails/GetByEmployee?employeeId=1 - null null
+2026-02-18 10:21:29.527 +05:30 [INF] Executing endpoint 'RFQ.UI.Controllers.ContactPersonDetailsController.GetByEmployee (RFQ.UI)'
+2026-02-18 10:21:29.530 +05:30 [INF] Route matched with {action = "GetByEmployee", controller = "ContactPersonDetails"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetByEmployee(Int32) on controller RFQ.UI.Controllers.ContactPersonDetailsController (RFQ.UI).
+2026-02-18 10:21:29.536 +05:30 [INF] Start processing HTTP request GET https://localhost:7272/api/ContactPersonDetails/GetByEmployee/1
+2026-02-18 10:21:29.536 +05:30 [INF] Sending HTTP request GET https://localhost:7272/api/ContactPersonDetails/GetByEmployee/1
+2026-02-18 10:21:29.541 +05:30 [INF] Received HTTP response headers after 3.9735ms - 200
+2026-02-18 10:21:29.542 +05:30 [INF] End processing HTTP request after 6.2661ms - 200
+2026-02-18 10:21:29.547 +05:30 [INF] Executing JsonResult, writing value of type 'System.Collections.Generic.List`1[[RFQ.UI.Domain.ResponseDto.ContactPersonDetailsResponseDto, RFQ.UI.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-02-18 10:21:29.550 +05:30 [INF] Executed action RFQ.UI.Controllers.ContactPersonDetailsController.GetByEmployee (RFQ.UI) in 18.5166ms
+2026-02-18 10:21:29.550 +05:30 [INF] Executed endpoint 'RFQ.UI.Controllers.ContactPersonDetailsController.GetByEmployee (RFQ.UI)'
+2026-02-18 10:21:29.551 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7295/ContactPersonDetails/GetByEmployee?employeeId=1 - 200 null application/json; charset=utf-8 26.7858ms
+2026-02-18 10:21:32.804 +05:30 [INF] Request starting HTTP/2 PUT https://localhost:7295/ContactPersonDetails/Update - application/json; charset=UTF-8 165
+2026-02-18 10:21:32.808 +05:30 [INF] CORS policy execution failed.
+2026-02-18 10:21:32.808 +05:30 [INF] Request origin https://localhost:7295 does not have permission to access the resource.
+2026-02-18 10:21:32.809 +05:30 [INF] Executing endpoint 'RFQ.UI.Controllers.ContactPersonDetailsController.Update (RFQ.UI)'
+2026-02-18 10:21:32.811 +05:30 [INF] Route matched with {action = "Update", controller = "ContactPersonDetails"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Update(RFQ.UI.Domain.RequestDto.ContactPersonDetailsRequestDto) on controller RFQ.UI.Controllers.ContactPersonDetailsController (RFQ.UI).
+2026-02-18 10:21:32.818 +05:30 [INF] Start processing HTTP request POST https://localhost:7272/api/ContactPersonDetails/Update
+2026-02-18 10:21:32.819 +05:30 [INF] Sending HTTP request POST https://localhost:7272/api/ContactPersonDetails/Update
+2026-02-18 10:21:32.825 +05:30 [INF] Received HTTP response headers after 6.2252ms - 200
+2026-02-18 10:21:32.826 +05:30 [INF] End processing HTTP request after 8.1363ms - 200
+2026-02-18 10:21:39.190 +05:30 [INF] Executing JsonResult, writing value of type '<>f__AnonymousType1`2[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-02-18 10:21:39.193 +05:30 [INF] Executed action RFQ.UI.Controllers.ContactPersonDetailsController.Update (RFQ.UI) in 6381.6051ms
+2026-02-18 10:21:39.195 +05:30 [INF] Executed endpoint 'RFQ.UI.Controllers.ContactPersonDetailsController.Update (RFQ.UI)'
+2026-02-18 10:21:39.196 +05:30 [INF] Request finished HTTP/2 PUT https://localhost:7295/ContactPersonDetails/Update - 200 null application/json; charset=utf-8 6392.1079ms
+2026-02-18 10:21:39.200 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7295/ContactPersonDetails/GetByEmployee?employeeId=1 - null null
+2026-02-18 10:21:39.201 +05:30 [INF] Executing endpoint 'RFQ.UI.Controllers.ContactPersonDetailsController.GetByEmployee (RFQ.UI)'
+2026-02-18 10:21:39.202 +05:30 [INF] Route matched with {action = "GetByEmployee", controller = "ContactPersonDetails"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetByEmployee(Int32) on controller RFQ.UI.Controllers.ContactPersonDetailsController (RFQ.UI).
+2026-02-18 10:21:39.205 +05:30 [INF] Start processing HTTP request GET https://localhost:7272/api/ContactPersonDetails/GetByEmployee/1
+2026-02-18 10:21:39.206 +05:30 [INF] Sending HTTP request GET https://localhost:7272/api/ContactPersonDetails/GetByEmployee/1
+2026-02-18 10:21:39.211 +05:30 [INF] Received HTTP response headers after 4.6904ms - 200
+2026-02-18 10:21:39.212 +05:30 [INF] End processing HTTP request after 7.4312ms - 200
+2026-02-18 10:21:39.214 +05:30 [INF] Executing JsonResult, writing value of type 'System.Collections.Generic.List`1[[RFQ.UI.Domain.ResponseDto.ContactPersonDetailsResponseDto, RFQ.UI.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-02-18 10:21:39.215 +05:30 [INF] Executed action RFQ.UI.Controllers.ContactPersonDetailsController.GetByEmployee (RFQ.UI) in 11.6828ms
+2026-02-18 10:21:39.215 +05:30 [INF] Executed endpoint 'RFQ.UI.Controllers.ContactPersonDetailsController.GetByEmployee (RFQ.UI)'
+2026-02-18 10:21:39.216 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7295/ContactPersonDetails/GetByEmployee?employeeId=1 - 200 null application/json; charset=utf-8 16.8586ms
+2026-02-18 10:21:57.619 +05:30 [INF] Request starting HTTP/2 PUT https://localhost:7295/ContactPersonDetails/Update - application/json; charset=UTF-8 165
+2026-02-18 10:21:57.623 +05:30 [INF] CORS policy execution failed.
+2026-02-18 10:21:57.624 +05:30 [INF] Request origin https://localhost:7295 does not have permission to access the resource.
+2026-02-18 10:21:57.624 +05:30 [INF] Executing endpoint 'RFQ.UI.Controllers.ContactPersonDetailsController.Update (RFQ.UI)'
+2026-02-18 10:21:57.625 +05:30 [INF] Route matched with {action = "Update", controller = "ContactPersonDetails"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Update(RFQ.UI.Domain.RequestDto.ContactPersonDetailsRequestDto) on controller RFQ.UI.Controllers.ContactPersonDetailsController (RFQ.UI).
+2026-02-18 10:21:57.627 +05:30 [INF] Start processing HTTP request POST https://localhost:7272/api/ContactPersonDetails/Update
+2026-02-18 10:21:57.627 +05:30 [INF] Sending HTTP request POST https://localhost:7272/api/ContactPersonDetails/Update
+2026-02-18 10:21:57.633 +05:30 [INF] Received HTTP response headers after 5.4101ms - 200
+2026-02-18 10:21:57.634 +05:30 [INF] End processing HTTP request after 7.6833ms - 200
+2026-02-18 10:21:57.635 +05:30 [INF] Executing JsonResult, writing value of type '<>f__AnonymousType1`2[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-02-18 10:21:57.637 +05:30 [INF] Executed action RFQ.UI.Controllers.ContactPersonDetailsController.Update (RFQ.UI) in 10.4953ms
+2026-02-18 10:21:57.638 +05:30 [INF] Executed endpoint 'RFQ.UI.Controllers.ContactPersonDetailsController.Update (RFQ.UI)'
+2026-02-18 10:21:57.638 +05:30 [INF] Request finished HTTP/2 PUT https://localhost:7295/ContactPersonDetails/Update - 200 null application/json; charset=utf-8 19.3185ms
+2026-02-18 10:21:57.642 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7295/ContactPersonDetails/GetByEmployee?employeeId=1 - null null
+2026-02-18 10:21:57.643 +05:30 [INF] Executing endpoint 'RFQ.UI.Controllers.ContactPersonDetailsController.GetByEmployee (RFQ.UI)'
+2026-02-18 10:21:57.644 +05:30 [INF] Route matched with {action = "GetByEmployee", controller = "ContactPersonDetails"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetByEmployee(Int32) on controller RFQ.UI.Controllers.ContactPersonDetailsController (RFQ.UI).
+2026-02-18 10:21:57.645 +05:30 [INF] Start processing HTTP request GET https://localhost:7272/api/ContactPersonDetails/GetByEmployee/1
+2026-02-18 10:21:57.646 +05:30 [INF] Sending HTTP request GET https://localhost:7272/api/ContactPersonDetails/GetByEmployee/1
+2026-02-18 10:21:57.649 +05:30 [INF] Received HTTP response headers after 3.2064ms - 200
+2026-02-18 10:21:57.650 +05:30 [INF] End processing HTTP request after 4.9521ms - 200
+2026-02-18 10:21:57.651 +05:30 [INF] Executing JsonResult, writing value of type 'System.Collections.Generic.List`1[[RFQ.UI.Domain.ResponseDto.ContactPersonDetailsResponseDto, RFQ.UI.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-02-18 10:21:57.651 +05:30 [INF] Executed action RFQ.UI.Controllers.ContactPersonDetailsController.GetByEmployee (RFQ.UI) in 6.6764ms
+2026-02-18 10:21:57.652 +05:30 [INF] Executed endpoint 'RFQ.UI.Controllers.ContactPersonDetailsController.GetByEmployee (RFQ.UI)'
+2026-02-18 10:21:57.653 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7295/ContactPersonDetails/GetByEmployee?employeeId=1 - 200 null application/json; charset=utf-8 11.4073ms
+2026-02-18 10:29:27.232 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7295/Dashboard/Dashboard - null null
+2026-02-18 10:29:27.258 +05:30 [INF] Executing endpoint 'RFQ.UI.Controllers.DashboardController.Dashboard (RFQ.UI)'
+2026-02-18 10:29:27.272 +05:30 [INF] Route matched with {action = "Dashboard", controller = "Dashboard"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Dashboard(RFQ.UI.Domain.ResponseDto.CompanyUserResponseDto) on controller RFQ.UI.Controllers.DashboardController (RFQ.UI).
+2026-02-18 10:29:27.281 +05:30 [INF] Start processing HTTP request GET https://localhost:7272/api/MenuList/GetMenu/1
+2026-02-18 10:29:27.282 +05:30 [INF] Sending HTTP request GET https://localhost:7272/api/MenuList/GetMenu/1
+2026-02-18 10:29:27.310 +05:30 [INF] Received HTTP response headers after 26.5537ms - 200
+2026-02-18 10:29:27.311 +05:30 [INF] End processing HTTP request after 30.0306ms - 200
+2026-02-18 10:29:27.313 +05:30 [INF] Start processing HTTP request GET https://localhost:7272/api/CompanyProfileRight/GetProfileRightsByProfileId/1
+2026-02-18 10:29:27.313 +05:30 [INF] Sending HTTP request GET https://localhost:7272/api/CompanyProfileRight/GetProfileRightsByProfileId/1
+2026-02-18 10:29:27.324 +05:30 [INF] Received HTTP response headers after 10.6288ms - 200
+2026-02-18 10:29:27.325 +05:30 [INF] End processing HTTP request after 12.9394ms - 200
+2026-02-18 10:29:27.331 +05:30 [INF] Executing ViewResult, running view Dashboard.
+2026-02-18 10:29:27.358 +05:30 [INF] Executed ViewResult - view Dashboard executed in 27.7624ms.
+2026-02-18 10:29:27.359 +05:30 [INF] Executed action RFQ.UI.Controllers.DashboardController.Dashboard (RFQ.UI) in 84.0543ms
+2026-02-18 10:29:27.360 +05:30 [INF] Executed endpoint 'RFQ.UI.Controllers.DashboardController.Dashboard (RFQ.UI)'
+2026-02-18 10:29:27.361 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7295/Dashboard/Dashboard - 200 null text/html; charset=utf-8 129.08ms
+2026-02-18 10:29:27.435 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7295/css/DashboardStyle.css - null null
+2026-02-18 10:29:27.439 +05:30 [INF] The file /css/DashboardStyle.css was not modified
+2026-02-18 10:29:27.440 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7295/_framework/aspnetcore-browser-refresh.js - null null
+2026-02-18 10:29:27.441 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7295/css/DashboardStyle.css - 304 null text/css 6.9139ms
+2026-02-18 10:29:27.444 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7295/_framework/aspnetcore-browser-refresh.js - 200 16497 application/javascript; charset=utf-8 4.7539ms
+2026-02-18 10:29:27.663 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7295/js/Views/Dashboard.js - null null
+2026-02-18 10:29:27.664 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7295/_vs/browserLink - null null
+2026-02-18 10:29:27.666 +05:30 [INF] The file /js/Views/Dashboard.js was not modified
+2026-02-18 10:29:27.669 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7295/js/Views/Dashboard.js - 304 null text/javascript 5.6433ms
+2026-02-18 10:29:27.681 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7295/_vs/browserLink - 200 null text/javascript; charset=UTF-8 17.8634ms
+2026-02-18 10:29:35.222 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7295/Employee/index - null null
+2026-02-18 10:29:35.227 +05:30 [INF] Executing endpoint 'RFQ.UI.Controllers.EmployeeController.Index (RFQ.UI)'
+2026-02-18 10:29:35.228 +05:30 [INF] Route matched with {action = "Index", controller = "Employee"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index() on controller RFQ.UI.Controllers.EmployeeController (RFQ.UI).
+2026-02-18 10:29:35.232 +05:30 [INF] Start processing HTTP request GET https://localhost:7272/api/MenuList/GetMenu/1
+2026-02-18 10:29:35.233 +05:30 [INF] Sending HTTP request GET https://localhost:7272/api/MenuList/GetMenu/1
+2026-02-18 10:29:35.239 +05:30 [INF] Received HTTP response headers after 4.706ms - 200
+2026-02-18 10:29:35.240 +05:30 [INF] End processing HTTP request after 8.0877ms - 200
+2026-02-18 10:29:35.241 +05:30 [INF] Start processing HTTP request GET https://localhost:7272/api/CompanyProfileRight/GetProfileRightsByProfileId/1
+2026-02-18 10:29:35.242 +05:30 [INF] Sending HTTP request GET https://localhost:7272/api/CompanyProfileRight/GetProfileRightsByProfileId/1
+2026-02-18 10:29:35.246 +05:30 [INF] Received HTTP response headers after 3.8862ms - 200
+2026-02-18 10:29:35.247 +05:30 [INF] End processing HTTP request after 6.1482ms - 200
+2026-02-18 10:29:35.248 +05:30 [INF] Executing ViewResult, running view Index.
+2026-02-18 10:29:35.257 +05:30 [INF] Executed ViewResult - view Index executed in 8.2746ms.
+2026-02-18 10:29:35.264 +05:30 [INF] Executed action RFQ.UI.Controllers.EmployeeController.Index (RFQ.UI) in 33.8308ms
+2026-02-18 10:29:35.265 +05:30 [INF] Executed endpoint 'RFQ.UI.Controllers.EmployeeController.Index (RFQ.UI)'
+2026-02-18 10:29:35.266 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7295/Employee/index - 200 null text/html; charset=utf-8 44.1742ms
+2026-02-18 10:29:35.502 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7295/js/Views/ContactPersonDetails.js?v=1.2 - null null
+2026-02-18 10:29:35.505 +05:30 [INF] The file /js/Views/ContactPersonDetails.js was not modified
+2026-02-18 10:29:35.506 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7295/js/Views/ContactPersonDetails.js?v=1.2 - 304 null text/javascript 4.682ms
+2026-02-18 10:29:35.510 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7295/_framework/aspnetcore-browser-refresh.js - null null
+2026-02-18 10:29:35.511 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7295/_vs/browserLink - null null
+2026-02-18 10:29:35.513 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7295/_framework/aspnetcore-browser-refresh.js - 200 16497 application/javascript; charset=utf-8 3.4924ms
+2026-02-18 10:29:35.520 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7295/_vs/browserLink - 200 null text/javascript; charset=UTF-8 9.7146ms
+2026-02-18 10:29:35.531 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7295/Employee/ViewEmployeeList - application/json 136
+2026-02-18 10:29:35.532 +05:30 [INF] CORS policy execution failed.
+2026-02-18 10:29:35.533 +05:30 [INF] Request origin https://localhost:7295 does not have permission to access the resource.
+2026-02-18 10:29:35.533 +05:30 [INF] Executing endpoint 'RFQ.UI.Controllers.EmployeeController.ViewEmployeeList (RFQ.UI)'
+2026-02-18 10:29:35.534 +05:30 [INF] Route matched with {action = "ViewEmployeeList", controller = "Employee"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ViewEmployeeList(RFQ.UI.Domain.RequestDto.PagingParam) on controller RFQ.UI.Controllers.EmployeeController (RFQ.UI).
+2026-02-18 10:29:35.536 +05:30 [INF] Start processing HTTP request POST https://localhost:7272/api/Employee/GetAllEmployees
+2026-02-18 10:29:35.536 +05:30 [INF] Sending HTTP request POST https://localhost:7272/api/Employee/GetAllEmployees
+2026-02-18 10:29:35.543 +05:30 [INF] Received HTTP response headers after 5.9635ms - 200
+2026-02-18 10:29:35.544 +05:30 [INF] End processing HTTP request after 7.9631ms - 200
+2026-02-18 10:29:35.545 +05:30 [INF] Executing JsonResult, writing value of type '<>f__AnonymousType2`5[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Collections.Generic.List`1[[RFQ.UI.Domain.ResponseDto.EmployeeResponseDto, RFQ.UI.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-02-18 10:29:35.545 +05:30 [INF] Executed action RFQ.UI.Controllers.EmployeeController.ViewEmployeeList (RFQ.UI) in 10.4303ms
+2026-02-18 10:29:35.546 +05:30 [INF] Executed endpoint 'RFQ.UI.Controllers.EmployeeController.ViewEmployeeList (RFQ.UI)'
+2026-02-18 10:29:35.547 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7295/Employee/ViewEmployeeList - 200 null application/json; charset=utf-8 16.4445ms
+2026-02-18 10:29:48.043 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7295/.well-known/appspecific/com.chrome.devtools.json - null null
+2026-02-18 10:29:48.045 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7295/.well-known/appspecific/com.chrome.devtools.json - 404 0 null 2.2037ms
+2026-02-18 10:29:48.048 +05:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7295/.well-known/appspecific/com.chrome.devtools.json, Response status code: 404
